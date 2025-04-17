@@ -326,7 +326,9 @@ function wähleAntwort(frageIndex, antwortIndex) {
         if (frage.antworten[index].korrekt) {
             button.classList.add("korrekt");
         } else {
-            button.classList.add("falsch");
+            if (!frage.antworten[antwortIndex].korrekt) {
+                button.classList.add("falsch");
+            }
         }
     });
 
@@ -368,4 +370,21 @@ function zeigeVerloren() {
     const verlorenText = document.createElement("h2");
     verlorenText.textContent = "Leider verloren!";
     verlorenContainer.appendChild(verlorenText);
+
+    //cheaten button um die nächste Frage zu sehen
+    const cheatButton = document.createElement("button");
+    cheatButton.textContent = "> Ich bin ein Cheater! <";
+    cheatButton.classList.add("cheat-button");
+
+    cheatButton.addEventListener("click", () => {
+        aktuelleFrageIndex++;
+        if (aktuelleFrageIndex < fragen.length) {
+            zeigeFrage(aktuelleFrageIndex);
+        } else {
+            zeigeGewinn();
+        }
+        verlorenContainer.style.display = "none";
+    });
+
+    verlorenContainer.appendChild(cheatButton);
 }
