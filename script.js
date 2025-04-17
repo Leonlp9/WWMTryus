@@ -224,6 +224,7 @@ document.getElementById("logo").addEventListener("click", function (event) {
 })
 
 function zeigeFrage(index) {
+    document.getElementById("chat").style.display = "none";
     document.getElementById("particles-js").classList.remove("show");
     neueFrage.play();
     fragenSound.play();
@@ -272,10 +273,15 @@ function zeigeFrage(index) {
     jokerButton2.textContent = "Chat-Joker";
     jokerButton2.classList.add("joker-button");
     jokerButton2.addEventListener("click", () => {
-        // Logik für Publikumsjoker
-        console.log("Publikumsjoker verwendet");
+        document.getElementById("chat").style.display = "block";
+        verwendeterPublikumsjoker = true;
+
+        jokerButton2.disabled = true;
+        jokerButton2.classList.add("deaktiviert");
     });
-    jokerContainer.appendChild(jokerButton2);
+    if (!verwendeterPublikumsjoker) {
+        jokerContainer.appendChild(jokerButton2);
+    }
 
     infosContainer.appendChild(jokerContainer);
 
@@ -355,6 +361,7 @@ function wähleAntwort(frageIndex, antwortIndex) {
 }
 
 function zeigeGewinnÜbersicht(callback) {
+    document.getElementById("chat").style.display = "none";
     const frageContainer = document.getElementById("frage-container");
     frageContainer.innerHTML = "";
 
@@ -542,8 +549,38 @@ chatContainer.addEventListener("mousedown", (e) => {
 });
 chatContainer.addEventListener("mousemove", (e) => {
     if (isDragging) {
-        chatContainer.style.left = `${e.clientX - offsetX}px`;
-        chatContainer.style.top = `${e.clientY - offsetY}px`;
+        const newLeft = e.clientX - offsetX;
+        const newTop = e.clientY - offsetY;
+
+        // Begrenzungen berechnen
+        const containerRect = chatContainer.getBoundingClientRect();
+        const windowWidth = window.innerWidth;
+        const windowHeight = window.innerHeight;
+
+        const maxLeft = windowWidth - containerRect.width;
+        const maxTop = windowHeight - containerRect.height;
+
+        // Begrenzte Positionen setzen
+        chatContainer.style.left = `${Math.min(Math.max(newLeft, 0), maxLeft)}px`;
+        chatContainer.style.top = `${Math.min(Math.max(newTop, 0), maxTop)}px`;
+    }
+});
+chatContainer.addEventListener("touchmove", (e) => {
+    if (isDragging) {
+        const newLeft = e.touches[0].clientX - offsetX;
+        const newTop = e.touches[0].clientY - offsetY;
+
+        // Begrenzungen berechnen
+        const containerRect = chatContainer.getBoundingClientRect();
+        const windowWidth = window.innerWidth;
+        const windowHeight = window.innerHeight;
+
+        const maxLeft = windowWidth - containerRect.width;
+        const maxTop = windowHeight - containerRect.height;
+
+        // Begrenzte Positionen setzen
+        chatContainer.style.left = `${Math.min(Math.max(newLeft, 0), maxLeft)}px`;
+        chatContainer.style.top = `${Math.min(Math.max(newTop, 0), maxTop)}px`;
     }
 });
 chatContainer.addEventListener("mouseup", () => {
@@ -557,12 +594,7 @@ chatContainer.addEventListener("touchstart", (e) => {
     offsetX = e.touches[0].clientX - chatContainer.getBoundingClientRect().left;
     offsetY = e.touches[0].clientY - chatContainer.getBoundingClientRect().top;
 });
-chatContainer.addEventListener("touchmove", (e) => {
-    if (isDragging) {
-        chatContainer.style.left = `${e.touches[0].clientX - offsetX}px`;
-        chatContainer.style.top = `${e.touches[0].clientY - offsetY}px`;
-    }
-});
+
 chatContainer.addEventListener("touchend", () => {
     isDragging = false;
 });
