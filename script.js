@@ -408,6 +408,10 @@ function zeigeGewinnÜbersicht(callback) {
 function zeigeGewinn() {
     richtig.pause();
     final.play();
+
+    const frageContainer = document.getElementById("frage-container");
+    frageContainer.innerHTML = "";
+
     const gewinnContainer = document.getElementById("gewinn-container");
     gewinnContainer.innerHTML = "";
     gewinnContainer.style.display = "block";
