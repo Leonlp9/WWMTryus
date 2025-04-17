@@ -47,8 +47,8 @@ body {
 
 #logo.logo-off {
     top: 25%;
-    width: 20vmin;
-    height: 20vmin;
+    width: 25vmin;
+    height: 25vmin;
 }
 
 #logo:not(.logo-off) {
@@ -135,6 +135,7 @@ body {
     animation: frage-appear 0.75s ease-out;
     animation-fill-mode: forwards;
     animation-delay: 0.15s;
+    width: 100%;
 }
 
 @keyframes frage-appear {
