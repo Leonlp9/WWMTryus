@@ -113,8 +113,8 @@ let fragen = [
         frage: "Was sieht man NICHT in Tryus Cam wenn er Streamt",
         antworten: [
             { text: "Bett", korrekt: false },
-            { text: "Fernseher", korrekt: true },
-            { text: "18 Schild", korrekt: false },
+            { text: "Fernseher", korrekt: false },
+            { text: "18 Schild", korrekt: true },
             { text: "Microphone", korrekt: false }
         ],
         bild: null,
