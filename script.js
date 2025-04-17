@@ -208,6 +208,7 @@ const neueFrage = new Audio("neueFrage.mp3");
 const fragenSound = new Audio("frage.mp3");
 const richtig = new Audio("richtig.mp3");
 const falsch = new Audio("falsch.mp3");
+const final = new Audio("final.mp3");
 window.addEventListener("click", function () {
     if (aktuelleFrageIndex === -1) {
         start.play();
@@ -405,6 +406,8 @@ function zeigeGewinnÜbersicht(callback) {
 
 
 function zeigeGewinn() {
+    richtig.pause();
+    final.play();
     const gewinnContainer = document.getElementById("gewinn-container");
     gewinnContainer.innerHTML = "";
     gewinnContainer.style.display = "block";

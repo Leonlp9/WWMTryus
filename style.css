@@ -323,6 +323,44 @@ body {
     display: none;
 }
 
+#gewinn-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+    background-color: rgba(253, 202, 68, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: 20;
+    color: white;
+    font-size: 1.5rem;
+    clip-path: polygon(
+            20px 0%,
+            calc(100% - 20px) 0%,
+            100% 50%,
+            calc(100% - 20px) 100%,
+            20px 100%,
+            0% 50%
+    );
+    display: none;
+    animation: gewinn-appear 0.75s ease-out;
+}
+
+@keyframes gewinn-appear {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(calc(-50% + 50px));
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+
 .infos-container {
     display: flex;
     flex-direction: row;
