@@ -110,12 +110,12 @@ let fragen = [
         selectedAntwort: null
     },
     {
-        frage: "Was sieht man NICHT in Tryus Cam wenn er Streamt spielt",
+        frage: "Was sieht man NICHT in Tryus Cam wenn er Streamt",
         antworten: [
             { text: "Bett", korrekt: false },
             { text: "Fernseher", korrekt: true },
             { text: "18 Schild", korrekt: false },
-            { text: " Microphone ", korrekt: false }
+            { text: "Microphone", korrekt: false }
         ],
         bild: null,
         selectedAntwort: null
@@ -168,7 +168,7 @@ let fragen = [
 
 
 const gewinn = [
-    "€ 50",
+    "50 Euro",
     "€ 100",
     "€ 200",
     "€ 300",
@@ -187,6 +187,8 @@ const gewinn = [
 ]
 
 let aktuelleFrageIndex = -1;
+let verwendeter50_50_Joker = false;
+let verwendeterPublikumsjoker = false;
 
 //shuffle the answers
 fragen.forEach(frage => {
@@ -202,7 +204,7 @@ function shuffleArray(array) {
 }
 
 const start = new Audio("start.mp3");
-const neueFrage = new Audio("neueFrage.m4a");
+const neueFrage = new Audio("neueFrage.mp3");
 const fragenSound = new Audio("frage.mp3");
 const richtig = new Audio("richtig.mp3");
 const falsch = new Audio("falsch.mp3");
@@ -227,6 +229,63 @@ function zeigeFrage(index) {
     const frageContainer = document.getElementById("frage-container");
     frageContainer.innerHTML = "";
 
+    const infosContainer = document.createElement("div");
+    infosContainer.classList.add("infos-container");
+
+    // Joker-Buttons hinzufügen
+    const jokerContainer = document.createElement("div");
+    jokerContainer.classList.add("joker-container");
+
+    const jokerButton1 = document.createElement("button");
+    jokerButton1.textContent = "50:50";
+    jokerButton1.classList.add("joker-button");
+    jokerButton1.addEventListener("click", () => {
+        // Logik für 50:50-Joker
+        const aktuelleFrage = fragen[aktuelleFrageIndex];
+        const falscheAntworten = aktuelleFrage.antworten
+            .map((antwort, index) => ({ ...antwort, index }))
+            .filter(antwort => !antwort.korrekt);
+
+        // Wähle zufällig zwei falsche Antworten aus
+        const zuEntfernendeAntworten = shuffleArray(falscheAntworten).slice(0, 2);
+
+        // Entferne die Antworten visuell und deaktiviere sie
+        const antwortButtons = document.querySelectorAll(".antwort-button");
+        zuEntfernendeAntworten.forEach(antwort => {
+            const button = antwortButtons[antwort.index];
+            button.classList.add("ausgeblendet");
+            button.disabled = true;
+        });
+
+        // Deaktiviere den Joker-Button
+        jokerButton1.disabled = true;
+        jokerButton1.classList.add("deaktiviert");
+
+        verwendeter50_50_Joker = true;
+    });
+    if (!verwendeter50_50_Joker) {
+        jokerContainer.appendChild(jokerButton1);
+    }
+
+    const jokerButton2 = document.createElement("button");
+    jokerButton2.textContent = "Chat-Joker";
+    jokerButton2.classList.add("joker-button");
+    jokerButton2.addEventListener("click", () => {
+        // Logik für Publikumsjoker
+        console.log("Publikumsjoker verwendet");
+    });
+    jokerContainer.appendChild(jokerButton2);
+
+    infosContainer.appendChild(jokerContainer);
+
+    // Textfeld für aktuelles Geld hinzufügen
+    const geldContainer = document.createElement("div");
+    geldContainer.classList.add("geld-container");
+    geldContainer.textContent = gewinn[aktuelleFrageIndex] || "€ 0";
+    infosContainer.appendChild(geldContainer);
+
+    frageContainer.appendChild(infosContainer);
+
     const frage = document.createElement("h2");
     frage.textContent = fragen[index].frage;
     frageContainer.appendChild(frage);
@@ -238,7 +297,6 @@ function zeigeFrage(index) {
         bild.classList.add("frage-bild");
         frageContainer.appendChild(bild);
     }
-
 
     const antwortenContainer = document.createElement("div");
     antwortenContainer.classList.add("antworten-container");
@@ -290,24 +348,12 @@ function wähleAntwort(frageIndex, antwortIndex) {
             zeigeVerloren();
         }, 1000);
     }
-
-    setTimeout(() => {
-        if (frage.antworten[antwortIndex].korrekt) {
-            aktuelleFrageIndex++;
-            if (aktuelleFrageIndex < fragen.length) {
-                zeigeFrage(aktuelleFrageIndex);
-            } else {
-                zeigeGewinn();
-            }
-        } else {
-            zeigeVerloren();
-        }
-    }, 6000);
 }
 
 function zeigeGewinn() {
     const gewinnContainer = document.getElementById("gewinn-container");
     gewinnContainer.innerHTML = "";
+    gewinnContainer.style.display = "block";
 
     const gewinnText = document.createElement("h2");
     gewinnText.textContent = "Herzlichen Glückwunsch! Du hast gewonnen: " + gewinn[aktuelleFrageIndex];
@@ -317,6 +363,7 @@ function zeigeGewinn() {
 function zeigeVerloren() {
     const verlorenContainer = document.getElementById("verloren-container");
     verlorenContainer.innerHTML = "";
+    verlorenContainer.style.display = "block";
 
     const verlorenText = document.createElement("h2");
     verlorenText.textContent = "Leider verloren!";
