@@ -447,3 +447,70 @@ body {
 .buchstabe {
     color: orange;
 }
+
+#gewinn-uebersicht {
+    display: none;
+    position: fixed;
+    flex-direction: column-reverse;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: rgba(0,0,0,0.9);
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    font-family: sans-serif;
+    z-index: 9999;
+    animation: gewinn-appear 0.75s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    animation-fill-mode: forwards;
+    max-height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: clamp(300px, 80vw, 600px);
+}
+
+#gewinn-uebersicht::-webkit-scrollbar {
+    width: 10px;
+}
+
+#gewinn-uebersicht::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+#gewinn-uebersicht::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+@keyframes gewinn-appear {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(calc(-50% + 50px));
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+
+.uebersicht-aktiv {
+    display: flex !important;
+}
+
+.gewinn-eintrag {
+    padding: 5px 10px;
+    border-bottom: 1px solid #444;
+}
+
+.gewinn-eintrag.aktuell {
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+#gewinn-uebersicht .cheat-button {
+    width: clamp(100px, 80%, 200px) !important;
+    margin: auto !important;
+    margin-top: 20px !important;
+}

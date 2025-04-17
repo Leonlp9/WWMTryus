@@ -173,17 +173,17 @@ const gewinn = [
     "200 Euro",
     "300 Euro",
     "500 Euro",
-    "1000 Euro",
-    "2000 Euro",
-    "4000 Euro",
-    "8000 Euro",
-    "16000 Euro",
-    "32000 Euro",
-    "64000 Euro",
-    "125000 Euro",
-    "250000 Euro",
-    "500000 Euro",
-    "1000000 Euro",
+    "1.000 Euro",
+    "2.000 Euro",
+    "4.000 Euro",
+    "8.000 Euro",
+    "16.000 Euro",
+    "32.000 Euro",
+    "64.000 Euro",
+    "125.000 Euro",
+    "250.000 Euro",
+    "500.000 Euro",
+    "1 MILLION Euro",
 ]
 
 let aktuelleFrageIndex = -1;
@@ -341,11 +341,11 @@ function wähleAntwort(frageIndex, antwortIndex) {
         setTimeout(() => {
             aktuelleFrageIndex++;
             if (aktuelleFrageIndex < fragen.length) {
-                zeigeFrage(aktuelleFrageIndex);
+                zeigeGewinnÜbersicht(() => zeigeFrage(aktuelleFrageIndex));
             } else {
                 zeigeGewinn();
             }
-        }, 6000);
+        }, 6000); // Nur 1 Sekunde Verzögerung bis zur Übersicht
     } else {
         falsch.play();
         setTimeout(() => {
@@ -353,6 +353,49 @@ function wähleAntwort(frageIndex, antwortIndex) {
         }, 1000);
     }
 }
+
+function zeigeGewinnÜbersicht(callback) {
+    const frageContainer = document.getElementById("frage-container");
+    frageContainer.innerHTML = "";
+
+    const logo = document.getElementById("logo");
+    logo.style.top = "-25vmin";
+
+    const gewinnContainer = document.getElementById("gewinn-uebersicht");
+    gewinnContainer.innerHTML = "";
+    gewinnContainer.classList.add("uebersicht-aktiv");
+
+    const weiterButton = document.createElement("button");
+    weiterButton.textContent = "Nächste Frage";
+    weiterButton.classList.add("cheat-button");
+    weiterButton.addEventListener("click", () => {
+        gewinnContainer.classList.remove("uebersicht-aktiv");
+        logo.style.top = "25%";
+        setTimeout(() => {
+            callback();
+        }, 500);
+    });
+    gewinnContainer.appendChild(weiterButton);
+
+    gewinn.forEach((betrag, index) => {
+        const eintrag = document.createElement("div");
+        eintrag.textContent = betrag;
+        eintrag.classList.add("gewinn-eintrag");
+        if (index === aktuelleFrageIndex) {
+            eintrag.classList.add("aktuell");
+        }
+        gewinnContainer.appendChild(eintrag);
+    });
+
+    const logoimg = document.createElement("img");
+    logoimg.src = "img.png";
+    logoimg.alt = "Logo";
+    logoimg.style.width = "150px";
+    logoimg.style.height = "150px";
+    logoimg.style.margin = "10px auto";
+    gewinnContainer.appendChild(logoimg);
+}
+
 
 function zeigeGewinn() {
     const gewinnContainer = document.getElementById("gewinn-container");
@@ -381,7 +424,7 @@ function zeigeVerloren() {
     cheatButton.addEventListener("click", () => {
         aktuelleFrageIndex++;
         if (aktuelleFrageIndex < fragen.length) {
-            zeigeFrage(aktuelleFrageIndex);
+            zeigeGewinnÜbersicht(() => zeigeFrage(aktuelleFrageIndex));
         } else {
             zeigeGewinn();
         }
