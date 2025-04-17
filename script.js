@@ -181,7 +181,6 @@ const gewinn = [
     "32.000 Euro",
     "64.000 Euro",
     "125.000 Euro",
-    "250.000 Euro",
     "500.000 Euro",
     "1 MILLION Euro",
 ]
@@ -417,7 +416,7 @@ function zeigeGewinn() {
     gewinnContainer.style.display = "block";
 
     const gewinnText = document.createElement("h2");
-    gewinnText.textContent = "Herzlichen Glückwunsch! Du hast gewonnen: " + gewinn[aktuelleFrageIndex];
+    gewinnText.textContent = "Herzlichen Glückwunsch! Du hast gewonnen: 1 MILLION Euro!";
     gewinnContainer.appendChild(gewinnText);
 }
 
