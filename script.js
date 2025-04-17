@@ -433,3 +433,139 @@ function zeigeVerloren() {
 
     verlorenContainer.appendChild(cheatButton);
 }
+
+
+let twitch = new WebSocket("wss://irc-ws.chat.twitch.tv:443");
+
+function setupTwitchWebSocket() {
+    twitch.onopen = () => {
+        console.log("Verbunden mit Twitch IRC");
+
+        twitch.send("PASS SCHMOOPIIE");
+        twitch.send("NICK justinfan12345");
+        twitch.send("CAP REQ :twitch.tv/tags twitch.tv/commands");
+        twitch.send("JOIN #tryus");
+
+        const chatList = document.getElementById("chat");
+        const chat = document.createElement('div');
+        chat.innerHTML = `Verbunden mit Twitch IRC`;
+        chatList.appendChild(chat);
+
+        setTimeout(() => {
+            chat.classList.add('hidden');
+            setTimeout(() => {
+                chatList.removeChild(chat);
+            }, 500);
+        }, 3000);
+    };
+}
+
+setupTwitchWebSocket();
+
+twitch.onmessage = (event) => {
+    const messages = event.data.split("\r\n");
+
+    messages.forEach((message) => {
+        if (message.includes("PRIVMSG")) {
+
+            const tagPart = message.split(" ")[0];
+            const userPart = message.split("!")[0].substring(1);
+            const msgPart = message.split(`PRIVMSG #tryus :`)[1];
+
+            if (!msgPart) return;
+
+            const tags = parseTags(tagPart);
+            const displayName = tags["display-name"] || userPart;
+            const color = tags["color"] || "#ffffff";
+            const roles = getUserRoles(tags["badges"]);
+
+            const notShowingUsers = ["streamelements", "nightbot", "moobot", "streamlabs"];
+            if (notShowingUsers.includes(displayName.toLowerCase())) return;
+
+            const userBadge = badge[roles] || "";
+
+            const chatList = document.getElementById("chat");
+
+            const chat = document.createElement('div');
+            chat.innerHTML = `${userBadge} <span style="color:${color}" class="${roles}">${displayName}</span>: ${msgPart}`;
+            chatList.appendChild(chat);
+
+            chat.scrollIntoView({ behavior: "smooth" });
+
+            setTimeout(() => {
+                chat.classList.add('hidden');
+                setTimeout(() => {
+                    chatList.removeChild(chat);
+                }, 500);
+            }, 60000);
+        }
+
+        if (message.startsWith("PING")) {
+            twitch.send("PONG :tmi.twitch.tv");
+        }
+    });
+};
+
+const badge = {
+    broadcaster: "👑",
+    mod: "🛡️",
+    vip: "🌟",
+    subscriber: "💎"
+};
+
+function parseTags(tagString) {
+    const tags = {};
+    tagString.substring(1).split(";").forEach(tag => {
+        const [key, value] = tag.split("=");
+        tags[key] = value || "";
+    });
+    return tags;
+}
+
+function getUserRoles(badges) {
+    if (!badges) return "";
+    if (badges.includes("broadcaster")) return "broadcaster";
+    if (badges.includes("moderator")) return "mod";
+    if (badges.includes("vip")) return "vip";
+    if (badges.includes("subscriber")) return "subscriber";
+    return "";
+}
+
+// chat ist fixed. Mach dass man mit drag es verschieben kann
+const chatContainer = document.getElementById("chat");
+let isDragging = false;
+let offsetX, offsetY;
+chatContainer.addEventListener("mousedown", (e) => {
+    isDragging = true;
+    offsetX = e.clientX - chatContainer.getBoundingClientRect().left;
+    offsetY = e.clientY - chatContainer.getBoundingClientRect().top;
+});
+chatContainer.addEventListener("mousemove", (e) => {
+    if (isDragging) {
+        chatContainer.style.left = `${e.clientX - offsetX}px`;
+        chatContainer.style.top = `${e.clientY - offsetY}px`;
+    }
+});
+chatContainer.addEventListener("mouseup", () => {
+    isDragging = false;
+});
+chatContainer.addEventListener("mouseleave", () => {
+    isDragging = false;
+});
+chatContainer.addEventListener("touchstart", (e) => {
+    isDragging = true;
+    offsetX = e.touches[0].clientX - chatContainer.getBoundingClientRect().left;
+    offsetY = e.touches[0].clientY - chatContainer.getBoundingClientRect().top;
+});
+chatContainer.addEventListener("touchmove", (e) => {
+    if (isDragging) {
+        chatContainer.style.left = `${e.touches[0].clientX - offsetX}px`;
+        chatContainer.style.top = `${e.touches[0].clientY - offsetY}px`;
+    }
+});
+chatContainer.addEventListener("touchend", () => {
+    isDragging = false;
+});
+chatContainer.addEventListener("touchcancel", () => {
+    isDragging = false;
+});
