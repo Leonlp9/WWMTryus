@@ -188,6 +188,7 @@ const gewinn = [
 let aktuelleFrageIndex = -1;
 let verwendeter50_50_Joker = false;
 let verwendeterPublikumsjoker = false;
+let verwendeterDiscordJoker = false;
 
 //shuffle the answers
 fragen.forEach(frage => {
@@ -281,6 +282,19 @@ function zeigeFrage(index) {
     });
     if (!verwendeterPublikumsjoker) {
         jokerContainer.appendChild(jokerButton2);
+    }
+
+    const jokerButton3 = document.createElement("button");
+    jokerButton3.textContent = "Discord-Joker";
+    jokerButton3.classList.add("joker-button");
+    jokerButton3.addEventListener("click", () => {
+        verwendeterDiscordJoker = true;
+
+        jokerButton3.disabled = true;
+        jokerButton3.classList.add("deaktiviert");
+    } );
+    if (!verwendeterDiscordJoker) {
+        jokerContainer.appendChild(jokerButton3);
     }
 
     infosContainer.appendChild(jokerContainer);
