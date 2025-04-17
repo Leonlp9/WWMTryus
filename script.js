@@ -209,6 +209,7 @@ const fragenSound = new Audio("frage.mp3");
 const richtig = new Audio("richtig.mp3");
 const falsch = new Audio("falsch.mp3");
 const final = new Audio("final.mp3");
+const board = new Audio("board.mp3");
 window.addEventListener("click", function () {
     if (aktuelleFrageIndex === -1) {
         start.play();
@@ -375,6 +376,7 @@ function wähleAntwort(frageIndex, antwortIndex) {
 }
 
 function zeigeGewinnÜbersicht(callback) {
+    board.play();
     document.getElementById("chat").style.display = "none";
     const frageContainer = document.getElementById("frage-container");
     frageContainer.innerHTML = "";
@@ -390,6 +392,7 @@ function zeigeGewinnÜbersicht(callback) {
     weiterButton.textContent = "Nächste Frage";
     weiterButton.classList.add("cheat-button");
     weiterButton.addEventListener("click", () => {
+        board.pause();
         gewinnContainer.classList.remove("uebersicht-aktiv");
         logo.style.top = "25%";
         setTimeout(() => {

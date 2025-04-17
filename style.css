@@ -541,6 +541,22 @@ body {
     color: black;
     font-weight: bold;
     border-radius: 8px;
+    animation: gewinn-eintrag 1.5s ease-in-out forwards infinite;
+}
+
+@keyframes gewinn-eintrag {
+    0% {
+        background-color: gold;
+        color: black;
+    }
+    50% {
+        background-color: black;
+        color: white;
+    }
+    100% {
+        background-color: gold;
+        color: black;
+    }
 }
 
 #gewinn-uebersicht .cheat-button {
