@@ -105,6 +105,7 @@ body {
     transform: translateX(-50%);
     width: 80%;
     max-width: 900px;
+    z-index: 5;
 }
 
 #frage-container h2 {
@@ -359,7 +360,6 @@ body {
 .joker-button:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
-
 }
 
 .joker-button:active {
@@ -442,4 +442,8 @@ body {
 .cheat-button:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.buchstabe {
+    color: orange;
 }

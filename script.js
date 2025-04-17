@@ -224,6 +224,7 @@ document.getElementById("logo").addEventListener("click", function (event) {
 })
 
 function zeigeFrage(index) {
+    document.getElementById("particles-js").classList.remove("show");
     neueFrage.play();
     fragenSound.play();
     const frageContainer = document.getElementById("frage-container");
@@ -302,7 +303,7 @@ function zeigeFrage(index) {
     antwortenContainer.classList.add("antworten-container");
     fragen[index].antworten.forEach((antwort, i) => {
         const antwortButton = document.createElement("button");
-        antwortButton.textContent = antwort.text;
+        antwortButton.innerHTML = "<span class='buchstabe'>" + String.fromCharCode(65 + i) + ":</span> " + antwort.text;
         antwortButton.classList.add("antwort-button");
         antwortButton.addEventListener("click", () => {
             wähleAntwort(index, i);
@@ -335,6 +336,7 @@ function wähleAntwort(frageIndex, antwortIndex) {
 
     if (frage.antworten[antwortIndex].korrekt) {
         richtig.play();
+        document.getElementById("particles-js").classList.add("show");
 
         setTimeout(() => {
             aktuelleFrageIndex++;
