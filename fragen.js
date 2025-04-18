@@ -333,6 +333,28 @@ const alleFragen = {
             selectedAntwort: null
         },
         {
+            frage: "Wie viele Bundesländer hat Deutschland?",
+            antworten: [
+                { text: "16", korrekt: true },
+                { text: "14", korrekt: false },
+                { text: "18", korrekt: false },
+                { text: "20", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Welcher Fluss fließt durch Paris?",
+            antworten: [
+                { text: "Seine", korrekt: true },
+                { text: "Rhein", korrekt: false },
+                { text: "Donau", korrekt: false },
+                { text: "Themse", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
             frage: "In welchem Jahr wurde die Berliner Mauer errichtet?",
             antworten: [
                 { text: "1961", korrekt: true },
