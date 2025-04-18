@@ -386,7 +386,40 @@ const fragen1000 = [
         ],
         bild: null,
         selectedAntwort: null
-    }
+    },
+    {
+        frage: "Wie nennt man ein männliches Schwein?",
+        antworten: [
+            { text: "Eber", korrekt: true },
+            { text: "Sau", korrekt: false },
+            { text: "Keiler", korrekt: false },
+            { text: "Bock", korrekt: false }
+        ],
+        bild: null,
+        selectedAntwort: null
+    },
+    {
+        frage: "Was ist die Hauptstadt von Frankreich?",
+        antworten: [
+            { text: "Berlin", korrekt: false },
+            { text: "Madrid", korrekt: false },
+            { text: "Paris", korrekt: true },
+            { text: "Rom", korrekt: false }
+        ],
+        bild: null,
+        selectedAntwort: null
+    },
+    {
+        frage: "Wie viele Zähne hat ein Erwachsener Mensch normalerweise?",
+        antworten: [
+            { text: "28", korrekt: false },
+            { text: "30", korrekt: false },
+            { text: "32", korrekt: true },
+            { text: "34", korrekt: false }
+        ],
+        bild: null,
+        selectedAntwort: null
+    },
 ];
 
 const fragen32000 = [
