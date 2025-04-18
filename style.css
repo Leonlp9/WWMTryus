@@ -608,6 +608,14 @@ body {
     margin-bottom: 5px;
 }
 
+#chat > div > img {
+    width: 18px;
+    height: 18px;
+    scale: 1.5;
+    margin: 0 5px;
+    transform: translateY(2px);
+}
+
 #chat > div > span {
     line-break: anywhere;
     word-break: break-word;

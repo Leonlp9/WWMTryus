@@ -958,6 +958,53 @@ function zeigeVerloren() {
     verlorenContainer.appendChild(cheatButton);
 }
 
+const globalEmotesUrl = `https://api.allorigins.win/get?url=${encodeURIComponent('https://emotes.adamcy.pl/v1/global/emotes/twitch.bttv.7tv.ffz')}`;
+const emotesUrl = `https://api.allorigins.win/get?url=${encodeURIComponent('https://emotes.adamcy.pl/v1/channel/tryus/emotes/bttv.7tv.ffz')}`;
+let emotes = {};
+
+// Fetch emotes data
+fetch(emotesUrl)
+    .then(response => response.json())
+    .then(data => {
+        const parsedData = JSON.parse(data.contents);
+        parsedData.forEach(emote => {
+            emotes[emote.code] = emote.urls[emote.urls.length - 2].url;
+        });
+
+        const chatList = document.getElementById("chat");
+        const chat = document.createElement('div');
+        chat.innerHTML = `Loaded ${parsedData.length} 7tv emotes`;
+        chatList.appendChild(chat);
+
+        setTimeout(() => {
+            chat.classList.add('hidden');
+            setTimeout(() => {
+                chatList.removeChild(chat);
+            }, 500);
+        }, 3000);
+    });
+
+fetch(globalEmotesUrl)
+    .then(response => response.json())
+    .then(data => {
+        const parsedData = JSON.parse(data.contents);
+        parsedData.forEach(emote => {
+            emotes[emote.code] = emote.urls[emote.urls.length - 2].url;
+        });
+
+        const chatList = document.getElementById("chat");
+        const chat = document.createElement('div');
+        chat.innerHTML = `Loaded ${parsedData.length} global emotes`;
+        chatList.appendChild(chat);
+
+        setTimeout(() => {
+            chat.classList.add('hidden');
+            setTimeout(() => {
+                chatList.removeChild(chat);
+            }, 500);
+        }, 3000);
+    });
+
 
 let twitch = new WebSocket("wss://irc-ws.chat.twitch.tv:443");
 
@@ -1011,7 +1058,7 @@ twitch.onmessage = (event) => {
             const chatList = document.getElementById("chat");
 
             const chat = document.createElement('div');
-            chat.innerHTML = `${userBadge} <span style="color:${color}" class="${roles}">${displayName}</span>: ${msgPart}`;
+            chat.innerHTML = `${userBadge} <span style="color:${color}" class="${roles}">${displayName}</span>: ${replaceEmotes(msgPart, tags["emotes"])}`;
             chatList.appendChild(chat);
 
             chat.scrollIntoView({ behavior: "smooth" });
@@ -1054,6 +1101,45 @@ function getUserRoles(badges) {
     if (badges.includes("subscriber")) return "subscriber";
     return "";
 }
+
+function replaceEmotes(message, emotesTag) {
+    if (emotesTag) {
+        const emoteList = emotesTag.split('/');
+        const emotePositions = [];
+
+        emoteList.forEach(emote => {
+            const [id, positions] = emote.split(':');
+            positions.split(',').forEach(position => {
+                const [start, end] = position.split('-').map(Number);
+                emotePositions.push({ start, end, id });
+            });
+        });
+
+        // Sortiere die Emote-Positionen nach Startindex
+        emotePositions.sort((a, b) => a.start - b.start);
+
+        // Ersetze Emotes im Message-String
+        let offset = 0;
+        emotePositions.forEach(({ start, end, id }) => {
+            const emoteCode = message.substring(start + offset, end + offset + 1);
+            const emoteImg = `<img src="https://static-cdn.jtvnw.net/emoticons/v2/${id}/default/dark/1.0" alt="${emoteCode}" />`;
+            message = message.substring(0, start + offset) + emoteImg + message.substring(end + offset + 1);
+            offset += emoteImg.length - (end - start + 1);
+        });
+    }
+
+    // Ersetze restliche Wörter NUR in Textteilen außerhalb von HTML-Tags
+    const parts = message.split(/(<[^>]+>)/g);
+    for (let i = 0; i < parts.length; i++) {
+        if (!parts[i].startsWith("<")) {
+            parts[i] = parts[i].replace(/\b\w+\b/g, word => {
+                return emotes[word] ? `<img src="${emotes[word]}" alt="${word}" />` : word;
+            });
+        }
+    }
+    return parts.join("");
+}
+
 
 // chat ist fixed. Mach dass man mit drag es verschieben kann
 const chatContainer = document.getElementById("chat");
