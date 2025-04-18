@@ -111,6 +111,39 @@ const alleFragen = {
             selectedAntwort: null
         },
         {
+            frage: "Wie viele Tage hat ein Jahr ohne Schaltjahr?",
+            antworten: [
+                { text: "365", korrekt: true },
+                { text: "364", korrekt: false },
+                { text: "360", korrekt: false },
+                { text: "366", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Wie viele Minuten hat eine Stunde?",
+            antworten: [
+                { text: "60", korrekt: true },
+                { text: "100", korrekt: false },
+                { text: "90", korrekt: false },
+                { text: "30", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Woher kommt die Pizza ursprünglich?",
+            antworten: [
+                { text: "Italien", korrekt: true },
+                { text: "Frankreich", korrekt: false },
+                { text: "Spanien", korrekt: false },
+                { text: "Griechenland", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
             frage: "Welche Farbe entsteht aus Blau und Gelb?",
             antworten: [
                 { text: "Grün", korrekt: true },
@@ -230,7 +263,62 @@ const alleFragen = {
             ],
             bild: null,
             selectedAntwort: null
-        }
+        },
+        {
+            frage: "Wie hieß Tryus früher auf Twitch?",
+            antworten: [
+                { text: "Tryus", korrekt: false },
+                { text: "Tomboxyz", korrekt: true },
+                { text: "TryusTV", korrekt: false },
+                { text: "Tommy", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Wie viele Twitch-Follower hat Tryus ungefähr? (Stand April 2025)",
+            antworten: [
+                { text: "25 Tsd.", korrekt: true },
+                { text: "10 Tsd.", korrekt: false },
+                { text: "50 Tsd.", korrekt: false },
+                { text: "100 Tsd.", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Auf welcher Plattform erreichte Tryus kürzlich 100 Tsd. Abonnenten? (Stand April 2025)",
+            antworten: [
+                { text: "YouTube", korrekt: true },
+                { text: "TikTok", korrekt: false },
+                { text: "Twitch", korrekt: false },
+                { text: "Instagram", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Wie beschreibt sich Tryus auf seinem X-Profil?",
+            antworten: [
+                { text: "Entertainer & Schüler", korrekt: false },
+                { text: "YouTuber & Schüler", korrekt: false },
+                { text: "YouTuber, Streamer & Schüler", korrekt: true },
+                { text: "Streamer & Schüler & Lehrer", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Welches Spiel steht im Mittelpunkt von Tryus’ Content?",
+            antworten: [
+                { text: "Minecraft", korrekt: false },
+                { text: "Apex Legends", korrekt: false },
+                { text: "Fortnite", korrekt: true },
+                { text: "League of Legends", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
     ],
     fragen1000: [
         {
