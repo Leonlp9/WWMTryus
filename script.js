@@ -3,9 +3,9 @@ document.getElementById("lobbyinfo").children[0].innerHTML = alleFragen.fragen50
 
 let fragen = [
     ...shuffleArray(shuffleArray(alleFragen.fragen50)).slice(0, 5),
-    ...shuffleArray(shuffleArray(alleFragen.fragen1000)).slice(0, 5),
+    ...shuffleArray(shuffleArray(alleFragen.fragen1000)).slice(0, 4),
     ...shuffleArray(shuffleArray(alleFragen.fragen32000)).slice(0, 4),
-    ...shuffleArray(shuffleArray(alleFragen.fragen1mio)).slice(0, 1)
+    ...shuffleArray(shuffleArray(alleFragen.fragen1mio)).slice(0, 2)
 ];
 
 const gewinn = [

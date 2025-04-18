@@ -1,6 +1,50 @@
 const alleFragen = {
     fragen50: [
         {
+            frage: "Wie viele Ecken hat ein Quadrat?",
+            antworten: [
+                { text: "4", korrekt: true },
+                { text: "3", korrekt: false },
+                { text: "5", korrekt: false },
+                { text: "6", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Wer malte die Mona Lisa?",
+            antworten: [
+                { text: "Leonardo da Vinci", korrekt: true },
+                { text: "Michelangelo", korrekt: false },
+                { text: "Raphael", korrekt: false },
+                { text: "Donatello", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Wie viele Planeten unseres Sonnensystems sind größer als die Erde?",
+            antworten: [
+                { text: "4", korrekt: true },
+                { text: "3", korrekt: false },
+                { text: "5", korrekt: false },
+                { text: "2", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Wie viele Kontinente beginnen mit dem Buchstaben 'A'?",
+            antworten: [
+                { text: "4", korrekt: false },
+                { text: "3", korrekt: true },
+                { text: "2", korrekt: false },
+                { text: "1", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
             frage: "Wer anderen eine Grube gräbt...",
             antworten: [
                 { text: "Bekommt ein Bauzertifikat", korrekt: false },
@@ -190,12 +234,100 @@ const alleFragen = {
     ],
     fragen1000: [
         {
+            frage: "Wie viele Elemente hat die erste Periode des Periodensystems?",
+            antworten: [
+                { text: "2", korrekt: true },
+                { text: "6", korrekt: false },
+                { text: "8", korrekt: false },
+                { text: "18", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "In welchem Jahr wurde die Berliner Mauer errichtet?",
+            antworten: [
+                { text: "1961", korrekt: true },
+                { text: "1945", korrekt: false },
+                { text: "1953", korrekt: false },
+                { text: "1989", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Welcher Planet ist bekannt als der Rote Planet?",
+            antworten: [
+                { text: "Mars", korrekt: true },
+                { text: "Venus", korrekt: false },
+                { text: "Jupiter", korrekt: false },
+                { text: "Saturn", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
             frage: "Was ist die aktuelle Fortnite Season?",
             antworten: [
                 { text: "Kapitel 5 - Season 9", korrekt: false },
                 { text: "Kapitel 6 - Season 7", korrekt: false },
                 { text: "Kapitel 6 – Season 2", korrekt: true },
                 { text: "Kapitel 6 - Season 4", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Was ist 15% von 200?",
+            antworten: [
+                { text: "30", korrekt: true },
+                { text: "25", korrekt: false },
+                { text: "35", korrekt: false },
+                { text: "40", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "In welcher Einheit wird elektrische Leistung gemessen?",
+            antworten: [
+                { text: "Watt", korrekt: true },
+                { text: "Volt", korrekt: false },
+                { text: "Ampere", korrekt: false },
+                { text: "Ohm", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Welcher Kontinent ist flächenmäßig der zweitgrößte?",
+            antworten: [
+                { text: "Afrika", korrekt: true },
+                { text: "Antarktika", korrekt: false },
+                { text: "Südamerika", korrekt: false },
+                { text: "Nordamerika", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Wie heißt der Prozess, bei dem Pflanzen Licht in Energie umwandeln?",
+            antworten: [
+                { text: "Photosynthese", korrekt: true },
+                { text: "Zellatmung", korrekt: false },
+                { text: "Fermentation", korrekt: false },
+                { text: "Osmose", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Welche Einheit misst elektrische Spannung?",
+            antworten: [
+                { text: "Volt", korrekt: true },
+                { text: "Ampere", korrekt: false },
+                { text: "Watt", korrekt: false },
+                { text: "Ohm", korrekt: false }
             ],
             bild: null,
             selectedAntwort: null
@@ -420,6 +552,72 @@ const alleFragen = {
             bild: null,
             selectedAntwort: null
         },
+        {
+            frage: "In welchem Jahr wurde die Europäische Union gegründet?",
+            antworten: [
+                { text: "1993", korrekt: true },
+                { text: "1957", korrekt: false },
+                { text: "2002", korrekt: false },
+                { text: "1975", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Wie viele Bundesstaaten hat die USA?",
+            antworten: [
+                { text: "50", korrekt: true },
+                { text: "48", korrekt: false },
+                { text: "52", korrekt: false },
+                { text: "51", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Was ist der Hauptbestandteil von Luft?",
+            antworten: [
+                { text: "Sauerstoff", korrekt: false },
+                { text: "Stickstoff", korrekt: true },
+                { text: "Kohlendioxid", korrekt: false },
+                { text: "Edelgase", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Wie viele Farben hat der Regenbogen?",
+            antworten: [
+                { text: "5", korrekt: false },
+                { text: "6", korrekt: false },
+                { text: "7", korrekt: true },
+                { text: "8", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Was ist die Hauptstadt von Italien?",
+            antworten: [
+                { text: "Rom", korrekt: true },
+                { text: "Mailand", korrekt: false },
+                { text: "Florenz", korrekt: false },
+                { text: "Venedig", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Wer war der erste Mensch auf dem Mond?",
+            antworten: [
+                { text: "Neil Armstrong", korrekt: true },
+                { text: "Buzz Aldrin", korrekt: false },
+                { text: "Yuri Gagarin", korrekt: false },
+                { text: "John Glenn", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        }
     ],
     fragen32000: [
         {
@@ -554,6 +752,50 @@ const alleFragen = {
             bild: null,
             selectedAntwort: null
         },
+        {
+            frage: "Welches Gas verursacht hauptsächlich den Treibhauseffekt?",
+            antworten: [
+                { text: "Kohlendioxid", korrekt: true },
+                { text: "Sauerstoff", korrekt: false },
+                { text: "Stickstoff", korrekt: false },
+                { text: "Argon", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Was ist die kleinste Primzahl?",
+            antworten: [
+                { text: "1", korrekt: false },
+                { text: "2", korrekt: true },
+                { text: "3", korrekt: false },
+                { text: "5", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Wie viele Zähne hat ein erwachsener Mensch normalerweise?",
+            antworten: [
+                { text: "28", korrekt: false },
+                { text: "30", korrekt: false },
+                { text: "32", korrekt: true },
+                { text: "34", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Was ist die Hauptstadt von Japan?",
+            antworten: [
+                { text: "Tokio", korrekt: true },
+                { text: "Kyoto", korrekt: false },
+                { text: "Osaka", korrekt: false },
+                { text: "Hiroshima", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        }
     ],
     fragen1mio: [
         {
@@ -640,6 +882,39 @@ const alleFragen = {
                 { text: "Juraperiode", korrekt: false },
                 { text: "Kreide", korrekt: false },
                 { text: "Perm", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Wer komponierte die 9. Sinfonie?",
+            antworten: [
+                { text: "Ludwig van Beethoven", korrekt: true },
+                { text: "Wolfgang Amadeus Mozart", korrekt: false },
+                { text: "Johann Sebastian Bach", korrekt: false },
+                { text: "Franz Schubert", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Welcher Computerpionier entwickelte das Konzept des Personal Computers (PC)?",
+            antworten: [
+                { text: "Steve Wozniak", korrekt: true },
+                { text: "Steve Jobs", korrekt: false },
+                { text: "Bill Gates", korrekt: false },
+                { text: "Linus Torvalds", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Wie viele Zeitzonen hat Russland?",
+            antworten: [
+                { text: "11", korrekt: true },
+                { text: "9", korrekt: false },
+                { text: "7", korrekt: false },
+                { text: "13", korrekt: false }
             ],
             bild: null,
             selectedAntwort: null
