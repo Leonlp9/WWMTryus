@@ -1,11 +1,37 @@
 //first span child of the lobbyinfo
 document.getElementById("lobbyinfo").children[0].innerHTML = alleFragen.fragen50.length + alleFragen.fragen1000.length + alleFragen.fragen32000.length + alleFragen.fragen1mio.length;
 
+// Funktion, die aus einem Fragenarray n Fragen auswählt und in localStorage speichert
+function selectQuestions(arr, storageKey, count) {
+    // Aus localStorage bereits benutzte Fragen holen (hier anhand des "frage"-Textes)
+    let used = JSON.parse(localStorage.getItem(storageKey)) || [];
+
+    // Verfügbare Fragen filtern, die noch nicht als genutzt markiert sind
+    let available = arr.filter(q => !used.includes(q.frage));
+
+    // Wenn nicht genügend Fragen vorhanden sind, localStorage zurücksetzen
+    if (available.length < count) {
+        used = [];
+        available = arr;
+    }
+
+    // Mische und wähle die gewünschten Fragen
+    available = shuffleArray(available);
+    let selected = available.slice(0, count);
+
+    // Markiere die neuen Fragen als genutzt
+    let newUsed = used.concat(selected.map(q => q.frage));
+    localStorage.setItem(storageKey, JSON.stringify(newUsed));
+
+    return selected;
+}
+
+// Beispielhaftes Ersetzen der bisherigen Auswahl des "fragen"-Arrays:
 let fragen = [
-    ...shuffleArray(shuffleArray(alleFragen.fragen50)).slice(0, 5),
-    ...shuffleArray(shuffleArray(alleFragen.fragen1000)).slice(0, 4),
-    ...shuffleArray(shuffleArray(alleFragen.fragen32000)).slice(0, 4),
-    ...shuffleArray(shuffleArray(alleFragen.fragen1mio)).slice(0, 2)
+    ...selectQuestions(alleFragen.fragen50, "usedFragen50", 5),
+    ...selectQuestions(alleFragen.fragen1000, "usedFragen1000", 4),
+    ...selectQuestions(alleFragen.fragen32000, "usedFragen32000", 4),
+    ...selectQuestions(alleFragen.fragen1mio, "usedFragen1mio", 2)
 ];
 
 const gewinn = [
