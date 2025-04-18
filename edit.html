@@ -1,0 +1,275 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Fragen Editieren</title>
+  <style>
+  /* Futuristisches Styling */
+  /* Importiert die Orbitron-Schriftart von Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+  body {
+      font-family: 'Orbitron', sans-serif;
+      margin: 20px;
+      background: radial-gradient(circle, #121212, #000);
+      color: #e0e0e0;
+  }
+
+  .form-group {
+      margin-bottom: 15px;
+  }
+
+  label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #00ffff;
+      text-shadow: 0 0 5px #00ffff;
+  }
+
+  input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      background: #1e1e1e;
+      border: 1px solid #00ffff;
+      color: #e0e0e0;
+      outline: none;
+      transition: border 0.3s ease;
+  }
+
+  input:focus, textarea:focus, select:focus {
+      border-color: #ff00ff;
+  }
+
+  button {
+      padding: 12px 20px;
+      margin-top: 10px;
+      background: #00ffff;
+      border: none;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+      text-shadow: 0 0 3px #000;
+  }
+
+  button:hover {
+      background: #ff00ff;
+      transform: scale(1.05);
+  }
+
+  #jsonOutput {
+      margin-top: 20px;
+      padding: 15px;
+      border: 1px solid #00ffff;
+      background: #1e1e1e;
+      white-space: pre-wrap;
+  }
+
+  #questionList {
+      margin-top: 20px;
+  }
+
+  .question-item {
+      border: 1px solid #00ffff;
+      margin-bottom: 10px;
+      padding: 10px;
+      transition: transform 0.3s;
+  }
+
+  .question-item:hover {
+      transform: translateX(5px);
+  }
+
+  .action-btn {
+      margin-right: 5px;
+      padding: 6px 12px;
+      background: #1e1e1e;
+      color: #00ffff;
+      border: 1px solid #00ffff;
+      cursor: pointer;
+      transition: background 0.3s ease;
+  }
+
+  .action-btn:hover {
+      background: #00ffff;
+      color: #000;
+  }
+  </style>
+</head>
+<body>
+  <h1>Fragen Editor</h1>
+  <form id="questionForm">
+    <div class="form-group">
+      <label for="levelSelect">Level auswählen</label>
+      <!-- Die Option-Werte wurden an die Schlüssel in alleFragen angepasst -->
+      <select id="levelSelect" name="level">
+        <option value="fragen50">50 Euro</option>
+        <option value="fragen1000">1000 Euro</option>
+        <option value="fragen32000">32000 Euro</option>
+        <option value="fragen1mio">1 MILLION Euro</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="frageText">Frage</label>
+      <input type="text" id="frageText" name="frage" required>
+    </div>
+    <div class="form-group">
+      <label>Antworten (4 Antworten)</label>
+      <input type="text" placeholder="Antwort A" id="answer0" required>
+      <input type="text" placeholder="Antwort B" id="answer1" required>
+      <input type="text" placeholder="Antwort C" id="answer2" required>
+      <input type="text" placeholder="Antwort D" id="answer3" required>
+    </div>
+    <div class="form-group">
+      <label for="correctAnswer">Korrekte Antwort (Buchstabe A bis D)</label>
+      <select id="correctAnswer" required>
+        <option value="0">A</option>
+        <option value="1">B</option>
+        <option value="2">C</option>
+        <option value="3">D</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="imageUrl">Bild URL (optional)</label>
+      <input type="text" id="imageUrl" placeholder="http://">
+    </div>
+    <button type="submit" id="submitBtn">Frage hinzufügen</button>
+  </form>
+
+  <hr>
+  <h2>JSON für Fragen</h2>
+  <p>Bitte per Discord an mich (Discord: Leon_lp9) schicken.</p>
+  <textarea id="jsonOutput" rows="15" readonly></textarea>
+
+  <hr>
+  <h2>Bestehende Fragen</h2>
+  <div id="questionList"></div>
+
+  <script src="fragen.js"></script>
+  <script>
+    var fragenObjekt = typeof alleFragen !== 'undefined' ? alleFragen : {
+        fragen50: [],
+        fragen1000: [],
+        fragen32000: [],
+        fragen1mio: []
+    };
+
+    const form = document.getElementById('questionForm');
+    const jsonOutput = document.getElementById('jsonOutput');
+    const questionList = document.getElementById('questionList');
+    const submitBtn = document.getElementById('submitBtn');
+
+    // Variable, um zu speichern, ob eine Frage bearbeitet wird
+    let editing = { level: null, index: null };
+
+    function updateJSONOutput() {
+      jsonOutput.value = JSON.stringify(fragenObjekt, null, 2);
+    }
+
+    function updateQuestionList() {
+      questionList.innerHTML = '';
+      Object.keys(fragenObjekt).forEach(level => {
+        const levelHeading = document.createElement('h3');
+        levelHeading.textContent = level;
+        questionList.appendChild(levelHeading);
+
+        fragenObjekt[level].forEach((frage, index) => {
+          const item = document.createElement('div');
+          item.className = 'question-item';
+
+          // Frage anzeigen
+          const p = document.createElement('p');
+          p.textContent = frage.frage;
+          item.appendChild(p);
+
+          // Antwortmöglichkeiten anzeigen
+          const ul = document.createElement('ul');
+          frage.antworten.forEach((ans, i) => {
+            const li = document.createElement('li');
+            li.textContent = ans.text;
+            li.style.color = ans.korrekt ? '#00ff00' : '#ffffff';
+            ul.appendChild(li);
+          });
+          item.appendChild(ul);
+
+          const editBtn = document.createElement('button');
+          editBtn.textContent = 'Bearbeiten';
+          editBtn.className = 'action-btn';
+          editBtn.addEventListener('click', () => {
+            document.getElementById('levelSelect').value = level;
+            document.getElementById('frageText').value = frage.frage;
+            frage.antworten.forEach((ans, i) => {
+              document.getElementById('answer' + i).value = ans.text;
+            });
+            const correctIndex = frage.antworten.findIndex(a => a.korrekt);
+            document.getElementById('correctAnswer').value = correctIndex;
+            document.getElementById('imageUrl').value = frage.bild || '';
+            editing = { level: level, index: index };
+            submitBtn.textContent = 'Änderung speichern';
+          });
+          item.appendChild(editBtn);
+
+          const deleteBtn = document.createElement('button');
+          deleteBtn.textContent = 'Frage löschen';
+          deleteBtn.className = 'action-btn';
+          deleteBtn.addEventListener('click', () => {
+            fragenObjekt[level].splice(index, 1);
+            updateJSONOutput();
+            updateQuestionList();
+            if (editing.level === level && editing.index === index) {
+              form.reset();
+              editing = { level: null, index: null };
+              submitBtn.textContent = 'Frage hinzuf\\ügen';
+            }
+          });
+          item.appendChild(deleteBtn);
+
+          questionList.appendChild(item);
+        });
+      });
+    }
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const level = document.getElementById('levelSelect').value;
+      const frageText = document.getElementById('frageText').value;
+      const answers = [];
+      for (let i = 0; i < 4; i++) {
+        answers.push({
+          text: document.getElementById('answer' + i).value,
+          korrekt: false
+        });
+      }
+      const correctIndex = parseInt(document.getElementById('correctAnswer').value, 10);
+      answers[correctIndex].korrekt = true;
+      const imageUrl = document.getElementById('imageUrl').value || null;
+
+      const frageObjektData = {
+        frage: frageText,
+        antworten: answers,
+        bild: imageUrl,
+        selectedAntwort: null
+      };
+
+      // Wird bearbeitet oder neu eingefügt?
+      if (editing.level !== null) {
+        // Aktualisieren der bestehenden Frage (auch Levelwechsel erlauben)
+        fragenObjekt[editing.level].splice(editing.index, 1);
+        fragenObjekt[level].push(frageObjektData);
+        editing = { level: null, index: null };
+        submitBtn.textContent = 'Frage hinzuf\ügen';
+      } else {
+        fragenObjekt[level].push(frageObjektData);
+      }
+
+      form.reset();
+      updateJSONOutput();
+      updateQuestionList();
+    });
+
+    updateJSONOutput();
+    updateQuestionList();
+  </script>
+</body>
+</html>
