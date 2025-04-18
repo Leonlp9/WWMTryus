@@ -164,6 +164,28 @@ const fragen50 = [
         bild: null,
         selectedAntwort: null
     },
+    {
+        frage: "Wie viele Monate haben 31 Tage?",
+        antworten: [
+            { text: "7", korrekt: true },
+            { text: "5", korrekt: false },
+            { text: "6", korrekt: false },
+            { text: "8", korrekt: false }
+        ],
+        bild: null,
+        selectedAntwort: null
+    },
+    {
+        frage: "Welches Element hat das chemische Symbol Fe?",
+        antworten: [
+            { text: "Eisen", korrekt: true },
+            { text: "Fluor", korrekt: false },
+            { text: "Gold", korrekt: false },
+            { text: "Blei", korrekt: false }
+        ],
+        bild: null,
+        selectedAntwort: null
+    }
 ];
 
 const fragen1000 = [
@@ -321,6 +343,50 @@ const fragen1000 = [
         bild: null,
         selectedAntwort: null
     },
+    {
+        frage: "Was ist der Siedepunkt von Wasser in °C auf Meereshöhe?",
+        antworten: [
+            { text: "100", korrekt: true },
+            { text: "90", korrekt: false },
+            { text: "80", korrekt: false },
+            { text: "120", korrekt: false }
+        ],
+        bild: null,
+        selectedAntwort: null
+    },
+    {
+        frage: "Welcher deutsche Physiker entwickelte die Relativitätstheorie?",
+        antworten: [
+            { text: "Albert Einstein", korrekt: true },
+            { text: "Max Planck", korrekt: false },
+            { text: "Werner Heisenberg", korrekt: false },
+            { text: "Erwin Schrödinger", korrekt: false }
+        ],
+        bild: null,
+        selectedAntwort: null
+    },
+    {
+        frage: "Wie heißt der größte Ozean der Erde?",
+        antworten: [
+            { text: "Pazifischer Ozean", korrekt: true },
+            { text: "Atlantischer Ozean", korrekt: false },
+            { text: "Indischer Ozean", korrekt: false },
+            { text: "Arktischer Ozean", korrekt: false }
+        ],
+        bild: null,
+        selectedAntwort: null
+    },
+    {
+        frage: "Welches ist das häufigste Gas in der Erdatmosphäre?",
+        antworten: [
+            { text: "Stickstoff", korrekt: true },
+            { text: "Sauerstoff", korrekt: false },
+            { text: "Kohlendioxid", korrekt: false },
+            { text: "Argon", korrekt: false }
+        ],
+        bild: null,
+        selectedAntwort: null
+    }
 ];
 
 const fragen32000 = [
@@ -445,6 +511,17 @@ const fragen32000 = [
         bild: null,
         selectedAntwort: null
     },
+    {
+        frage: "In welchem Jahr begann der Zweite Weltkrieg?",
+        antworten: [
+            { text: "1939", korrekt: true },
+            { text: "1914", korrekt: false },
+            { text: "1945", korrekt: false },
+            { text: "1929", korrekt: false }
+        ],
+        bild: null,
+        selectedAntwort: null
+    },
 ];
 
 const fragen1mio = [
@@ -524,8 +601,22 @@ const fragen1mio = [
         ],
         bild: null,
         selectedAntwort: null
-    }
+    },
+    {
+        frage: "In welcher geologischen Epoche lebten die ersten Dinosaurier?",
+        antworten: [
+            { text: "Trias", korrekt: true },
+            { text: "Juraperiode", korrekt: false },
+            { text: "Kreide", korrekt: false },
+            { text: "Perm", korrekt: false }
+        ],
+        bild: null,
+        selectedAntwort: null
+    },
 ];
+
+//first span child of the lobbyinfo
+document.getElementById("lobbyinfo").children[0].innerHTML = fragen50.length + fragen1000.length + fragen32000.length + fragen1mio.length;
 
 let fragen = [
     ...shuffleArray(shuffleArray(fragen50)).slice(0, 5),
@@ -595,6 +686,7 @@ document.getElementById("logo").addEventListener("click", function (event) {
 })
 
 function zeigeFrage(index) {
+    document.getElementById("lobbyinfo").style.display = "none";
     document.getElementById("chat").style.display = "none";
     document.getElementById("particles-js").classList.remove("show");
     neueFrage.play();
