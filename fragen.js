@@ -330,6 +330,39 @@ const alleFragen = {
             bild: null,
             selectedAntwort: null
         },
+        {
+            frage: "Wenn zwei Väter und zwei Söhne zusammen drei Äpfel essen und jeder genau einen isst, wie ist das möglich?",
+            antworten: [
+                { text: "Großvater, Vater und Sohn", korrekt: true },
+                { text: "Es war Ramadan", korrekt: false },
+                { text: "Ein Apfel hatte zwei Kerne", korrekt: false },
+                { text: "Zwei aßen jeweils einen halben", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Welcher Monat hat 28 Tage?",
+            antworten: [
+                { text: "Alle", korrekt: true },
+                { text: "Februar", korrekt: false },
+                { text: "Januar", korrekt: false },
+                { text: "März", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "In einem Quiz laufen Fragen rückwärts von 10 bis 1. Welches ist die fünfte Frage?",
+            antworten: [
+                { text: "Frage6", korrekt: true },
+                { text: "Frage5", korrekt: false },
+                { text: "Frage7", korrekt: false },
+                { text: "Frage10", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        }
     ],
     fragen1000: [
         {
@@ -750,6 +783,28 @@ const alleFragen = {
             bild: null,
             selectedAntwort: null
         },
+        {
+            frage: "Welches unentscheidbare Problem bewies Alan Turing im Jahr 1936?",
+            antworten: [
+                { text: "Das Halteproblem", korrekt: true },
+                { text: "Das Entscheidungsproblem", korrekt: false },
+                { text: "Das Kontinuitätsproblem", korrekt: false },
+                { text: "Das Wortproblem", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Welches Land führte als erstes wieder eine Monarchie ein, nachdem es diese abgeschafft hatte?",
+            antworten: [
+                { text: "Frankreich", korrekt: true },
+                { text: "Spanien", korrekt: false },
+                { text: "Griechenland", korrekt: false },
+                { text: "Niederlande", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
     ],
     fragen32000: [
         {
@@ -949,7 +1004,84 @@ const alleFragen = {
             ],
             bild: null,
             selectedAntwort: null
-        }
+        },
+        {
+            frage: "Was beschreibt Einsteins Gleichung E = mc^2?",
+            antworten: [
+                { text: "Beziehung von Energie und Masse", korrekt: true },
+                { text: "Wechselwirkung von Elektronen", korrekt: false },
+                { text: "Speed of light formula", korrekt: false },
+                { text: "Gravitationsgesetz", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Welches Element hat das seltenste natürlich vorkommende Vorkommen in der Erdkruste?",
+            antworten: [
+                { text: "Astat", korrekt: true },
+                { text: "Francium", korrekt: false },
+                { text: "Promethium", korrekt: false },
+                { text: "Radon", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Welcher Fluss ist der längste Zufluss des Amazonas?",
+            antworten: [
+                { text: "Der Rio Negro", korrekt: true },
+                { text: "Der Rio Madeira", korrekt: false },
+                { text: "Der Rio Ucayali", korrekt: false },
+                { text: "Der Rio Japurá", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Wer führte 1976 die erste vollständige computergestützte Lösung des Vierfarbenproblems durch?",
+            antworten: [
+                { text: "Kenneth Appel und Wolfgang Haken", korrekt: true },
+                { text: "Augustin Cauchy", korrekt: false },
+                { text: "Karl Friedrich Gauss", korrekt: false },
+                { text: "Alan Turing", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Ngerulmud ist die kleinste Hauptstadt der Welt (ca.400 Einwohner). In welchem Staat liegt sie?",
+            antworten: [
+                { text: "Palau", korrekt: true },
+                { text: "Tuvalu", korrekt: false },
+                { text: "San Marino", korrekt: false },
+                { text: "Nauru", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Nach welchem Tier sind die Kanarischen Inseln benannt?",
+            antworten: [
+                { text: "Hunde", korrekt: true },
+                { text: "Vögel", korrekt: false },
+                { text: "Ratten", korrekt: false },
+                { text: "Ziegen", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Wie heißt das Gas, das in der atmosphärischen Chemie als ‚Kaltes Plasma‘ genutzt wird und üblicherweise bei –190 °C verflüssigt wird?",
+            antworten: [
+                { text: "Xenon", korrekt: true },
+                { text: "Krypton", korrekt: false },
+                { text: "Argon", korrekt: false },
+                { text: "Neon", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
     ],
     fragen1mio: [
         {
@@ -1092,6 +1224,52 @@ const alleFragen = {
                 { text: "Xyli", korrekt: true },
                 { text: "Joop", korrekt: false }
             ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Welche Schriftsprache gilt als die älteste, die noch kontinuierlich verwendet wird?",
+            antworten: [
+                { text: "Chinesische Schrift", korrekt: true },
+                { text: "Sumerische Keilschrift", korrekt: false },
+                { text: "Altägyptische Hieroglyphen", korrekt: false },
+                { text: "Maya-Keilschrift", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Wie lange benötigt Licht im Vakuum, um vom Erdkern bis zur Erdoberfläche zu gelangen (ca.6 371km)?",
+            antworten: [
+                { text: "≈0,021s", korrekt: true },
+                { text: "≈0,12s", korrekt: false },
+                { text: "≈1,5s", korrekt: false },
+                { text: "≈0,005s", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Welcher Mathematiker bewies 1837, dass das Problem der Königsberger Brücken keine Lösung besitzt?",
+            antworten: [
+                { text: "Leonhard Euler", korrekt: true },
+                { text: "Pierre Wantzel", korrekt: false },
+                { text: "Joseph-Louis Lagrange", korrekt: false },
+                { text: "Évariste Galois", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Welche Farbe hatten die ersten Converse All-Stars (abgesehen vom schwarzen Besatz), als sie 1917 erstmals in Produktion gingen?",
+            antworten: [
+                { text: "Braun", korrekt: true },
+                { text: "Weiß", korrekt: false },
+                { text: "Grau", korrekt: false },
+                { text: "Beige", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
         }
     ]
 }
