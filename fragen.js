@@ -1018,5 +1018,16 @@ const alleFragen = {
             bild: null,
             selectedAntwort: null
         },
+        {
+            frage: "Wer gründete das Unternehmen Microsoft?",
+            antworten: [
+                { text: "Bill Gates", korrekt: true },
+                { text: "Steve Jobs", korrekt: false },
+                { text: "Mark Zuckerberg", korrekt: false },
+                { text: "Elon Musk", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        }
     ]
 }
