@@ -652,17 +652,6 @@ const alleFragen = {
             selectedAntwort: null
         },
         {
-            frage: "Wie viele Zähne hat ein Erwachsener Mensch normalerweise?",
-            antworten: [
-                { text: "28", korrekt: false },
-                { text: "30", korrekt: false },
-                { text: "32", korrekt: true },
-                { text: "34", korrekt: false }
-            ],
-            bild: null,
-            selectedAntwort: null
-        },
-        {
             frage: "In welchem Jahr wurde die Europäische Union gegründet?",
             antworten: [
                 { text: "1993", korrekt: true },
@@ -885,7 +874,7 @@ const alleFragen = {
             selectedAntwort: null
         },
         {
-            frage: "Wie viele Zähne hat ein erwachsener Mensch normalerweise?",
+            frage: "Wie viele Zähne hat ein Erwachsener Mensch normalerweise?",
             antworten: [
                 { text: "28", korrekt: false },
                 { text: "30", korrekt: false },
