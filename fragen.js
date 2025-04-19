@@ -319,6 +319,17 @@ const alleFragen = {
             bild: null,
             selectedAntwort: null
         },
+        {
+            frage: "Welches Tier ist das größte Landsäugetier?",
+            antworten: [
+                { text: "Afrikanischer Elefant", korrekt: true  },
+                { text: "Giraffe",               korrekt: false },
+                { text: "Nilpferd",              korrekt: false },
+                { text: "Braunbär",              korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
     ],
     fragen1000: [
         {
@@ -716,7 +727,29 @@ const alleFragen = {
             ],
             bild: null,
             selectedAntwort: null
-        }
+        },
+        {
+            frage: "Welche Währung hat Japan?",
+            antworten: [
+                { text: "Yen",          korrekt: true  },
+                { text: "Won",          korrekt: false },
+                { text: "Yuan",         korrekt: false },
+                { text: "Baht",         korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Wie heißt der Fluss, der durch London fließt?",
+            antworten: [
+                { text: "Themse",       korrekt: true  },
+                { text: "Seine",        korrekt: false },
+                { text: "Rhein",        korrekt: false },
+                { text: "Elbe",         korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
     ],
     fragen32000: [
         {
@@ -894,6 +927,28 @@ const alleFragen = {
             ],
             bild: null,
             selectedAntwort: null
+        },
+        {
+            frage: "Bei einem heftigen Streit fliegen redensartlich die …?",
+            antworten: [
+                { text: "Fetzen",      korrekt: true  },
+                { text: "Lumpen",      korrekt: false },
+                { text: "Flicken",     korrekt: false },
+                { text: "Klamotten",   korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Welches Instrument hat 88 Tasten?",
+            antworten: [
+                { text: "Klavier",      korrekt: true  },
+                { text: "Orgel",        korrekt: false },
+                { text: "Akkordeon",    korrekt: false },
+                { text: "Xylophon",     korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
         }
     ],
     fragen1mio: [
@@ -1028,6 +1083,15 @@ const alleFragen = {
             ],
             bild: null,
             selectedAntwort: null
+        },
+        {
+            frage: "Die gelben Figuren auf Emotes wie o7 heißen:",
+            antworten: [
+                { text: "Trubu", korrekt: false },
+                { text: "Kaan", korrekt: false },
+                { text: "Xyli", korrekt: true },
+                { text: "Joop", korrekt: false }
+            ],
         }
     ]
 }
