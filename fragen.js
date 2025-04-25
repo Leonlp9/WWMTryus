@@ -362,7 +362,62 @@ const alleFragen = {
             ],
             bild: null,
             selectedAntwort: null
-        }
+        },
+        {
+            frage: "Wer ist aktuell Bundeskanzler von Deutschland?",
+            antworten: [
+                { text: "Olaf Scholz", korrekt: true },
+                { text: "Angela Merkel", korrekt: false },
+                { text: "Frank-Walter Steinmeier", korrekt: false },
+                { text: "Gerhard Schröder", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Wie viele Zentimeter sind ein Dezimeter",
+            antworten: [
+                { text: "10", korrekt: true },
+                { text: "100", korrekt: false },
+                { text: "1", korrekt: false },
+                { text: "0,1", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Wie nennt man einen Mann, der gerade geheiratet hat?",
+            antworten: [
+                { text: "Bräutigam", korrekt: true },
+                { text: "Braut", korrekt: false },
+                { text: "Ehemann", korrekt: false },
+                { text: "Verlobter", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Welche Rückennummer hat Christiano Ronaldo?",
+            antworten: [
+                { text: "7", korrekt: true },
+                { text: "10", korrekt: false },
+                { text: "11", korrekt: false },
+                { text: "9", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Wie viele Bundesstaaten hat die USA?",
+            antworten: [
+                { text: "50", korrekt: true },
+                { text: "48", korrekt: false },
+                { text: "52", korrekt: false },
+                { text: "51", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
     ],
     fragen1000: [
         {
@@ -805,6 +860,39 @@ const alleFragen = {
             bild: null,
             selectedAntwort: null
         },
+        {
+            frage: "Was macht die Schufa?",
+            antworten: [
+                { text: "Sie bewertet die Kreditwürdigkeit von Personen", korrekt: true },
+                { text: "Sie gibt Auskunft über die Bonität von Unternehmen", korrekt: false },
+                { text: "Sie ist eine Bank", korrekt: false },
+                { text: "Sie ist ein Versicherungsunternehmen", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Aus was besteht ein Diamant?",
+            antworten: [
+                { text: "Kohlenstoff", korrekt: true },
+                { text: "Silizium", korrekt: false },
+                { text: "Eisen", korrekt: false },
+                { text: "Gold", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Wie viele Videos hat Tom auf sein YouTube Kanal?",
+            antworten: [
+                { text: "~ 300", korrekt: true },
+                { text: "~ 100", korrekt: false },
+                { text: "~ 200", korrekt: false },
+                { text: "~ 450", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
     ],
     fragen32000: [
         {
@@ -1078,6 +1166,50 @@ const alleFragen = {
                 { text: "Krypton", korrekt: false },
                 { text: "Argon", korrekt: false },
                 { text: "Neon", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Von wann bis wann war der Erste Weltkrieg?",
+            antworten: [
+                { text: "1914-1918", korrekt: true },
+                { text: "1939-1945", korrekt: false },
+                { text: "1912-1916", korrekt: false },
+                { text: "1889-1894", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Wie groß ist Deutschland",
+            antworten: [
+                { text: "~ 357.000 km²", korrekt: true },
+                { text: "~ 375.000 km²", korrekt: false },
+                { text: "~ 425.000 km²", korrekt: false },
+                { text: "~ 452.000 km²", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "In welchem Land liegt der Mount Everest?",
+            antworten: [
+                { text: "Nepal", korrekt: true },
+                { text: "Tibet", korrekt: false },
+                { text: "Indien", korrekt: false },
+                { text: "Bhutan", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Wie teuer ist ein Bitcoin?",
+            antworten: [
+                { text: "~ 200.000", korrekt: false },
+                { text: "~ 30.000", korrekt: false },
+                { text: "~ 40.000", korrekt: false },
+                { text: "~ 80.000", korrekt: true }
             ],
             bild: null,
             selectedAntwort: null
