@@ -63,9 +63,12 @@ fragen.forEach(frage => {
 });
 
 function shuffleArray(array) {
-    for (let i = 0; i < array.length - 1; i++) {
-        // wähle j zufällig im Bereich [i..array.length-1]
-        const j = i + Math.floor(Math.random() * (array.length - i));
+    for (let i = array.length - 1; i > 0; i--) {
+        // Ein kryptografisch sicherer Zufallswert
+        const randomBuffer = new Uint32Array(1);
+        window.crypto.getRandomValues(randomBuffer);
+        // Berechne einen Index im Bereich [0,i]
+        const j = Math.floor(randomBuffer[0] / (0xFFFFFFFF + 1) * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
     return array;
