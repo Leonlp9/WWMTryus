@@ -12,17 +12,6 @@ const alleFragen = {
             selectedAntwort: null
         },
         {
-            frage: "Wer malte die Mona Lisa?",
-            antworten: [
-                { text: "Leonardo da Vinci", korrekt: true },
-                { text: "Michelangelo", korrekt: false },
-                { text: "Raphael", korrekt: false },
-                { text: "Donatello", korrekt: false }
-            ],
-            bild: null,
-            selectedAntwort: null
-        },
-        {
             frage: "Wie viele Planeten unseres Sonnensystems sind größer als die Erde?",
             antworten: [
                 { text: "4", korrekt: true },
@@ -51,17 +40,6 @@ const alleFragen = {
                 { text: "Hat einen Bagger", korrekt: false },
                 { text: "Muss sie auch betonieren", korrekt: false },
                 { text: "Fällt selbst hinein", korrekt: true }
-            ],
-            bild: null,
-            selectedAntwort: null
-        },
-        {
-            frage: "Wie viele Kontinente gibt es?",
-            antworten: [
-                { text: "5", korrekt: false },
-                { text: "7", korrekt: true },
-                { text: "4", korrekt: false },
-                { text: "6", korrekt: false }
             ],
             bild: null,
             selectedAntwort: null
@@ -243,17 +221,6 @@ const alleFragen = {
             selectedAntwort: null
         },
         {
-            frage: "Wie viele Monate haben 31 Tage?",
-            antworten: [
-                { text: "7", korrekt: true },
-                { text: "5", korrekt: false },
-                { text: "6", korrekt: false },
-                { text: "8", korrekt: false }
-            ],
-            bild: null,
-            selectedAntwort: null
-        },
-        {
             frage: "Welches Element hat das chemische Symbol Fe?",
             antworten: [
                 { text: "Eisen", korrekt: true },
@@ -397,17 +364,6 @@ const alleFragen = {
             selectedAntwort: null
         },
         {
-            frage: "Wie viele Bundesstaaten hat die USA?",
-            antworten: [
-                { text: "50", korrekt: true },
-                { text: "48", korrekt: false },
-                { text: "52", korrekt: false },
-                { text: "51", korrekt: false }
-            ],
-            bild: null,
-            selectedAntwort: null
-        },
-        {
             frage: "Was sind Windbeutel?",
             antworten: [
                 { text: "Ein Gebäck", korrekt: true },
@@ -436,17 +392,6 @@ const alleFragen = {
                 { "text": "CO2", "korrekt": false },
                 { "text": "O2", "korrekt": false },
                 { "text": "NaCl", "korrekt": false }
-            ],
-            "bild": null,
-            "selectedAntwort": null
-        },
-        {
-            "frage": "Welches Tier ist das größte Landtier der Erde?",
-            "antworten": [
-                { "text": "Afrikanischer Elefant", "korrekt": true },
-                { "text": "Giraffe", "korrekt": false },
-                { "text": "Nashorn", "korrekt": false },
-                { "text": "Nilpferd", "korrekt": false }
             ],
             "bild": null,
             "selectedAntwort": null
@@ -485,34 +430,12 @@ const alleFragen = {
             "selectedAntwort": null
         },
         {
-            "frage": "Was ist die Hauptstadt von Frankreich?",
-            "antworten": [
-                { "text": "Paris", "korrekt": true },
-                { "text": "Lyon", "korrekt": false },
-                { "text": "Marseille", "korrekt": false },
-                { "text": "Toulouse", "korrekt": false }
-            ],
-            "bild": null,
-            "selectedAntwort": null
-        },
-        {
             "frage": "Welche Sprache wird in Brasilien hauptsächlich gesprochen?",
             "antworten": [
                 { "text": "Portugiesisch", "korrekt": true },
                 { "text": "Spanisch", "korrekt": false },
                 { "text": "Englisch", "korrekt": false },
                 { "text": "Französisch", "korrekt": false }
-            ],
-            "bild": null,
-            "selectedAntwort": null
-        },
-        {
-            "frage": "Wer war der erste Mensch auf dem Mond?",
-            "antworten": [
-                { "text": "Neil Armstrong", "korrekt": true },
-                { "text": "Buzz Aldrin", "korrekt": false },
-                { "text": "Yuri Gagarin", "korrekt": false },
-                { "text": "Michael Collins", "korrekt": false }
             ],
             "bild": null,
             "selectedAntwort": null
@@ -535,28 +458,6 @@ const alleFragen = {
                 { "text": "Grün", "korrekt": false },
                 { "text": "Braun", "korrekt": false },
                 { "text": "Schwarz", "korrekt": false }
-            ],
-            "bild": null,
-            "selectedAntwort": null
-        },
-        {
-            "frage": "Wieviele Ecken hat ein Quadrat?",
-            "antworten": [
-                { "text": "4", "korrekt": true },
-                { "text": "3", "korrekt": false },
-                { "text": "5", "korrekt": false },
-                { "text": "6", "korrekt": false }
-            ],
-            "bild": null,
-            "selectedAntwort": null
-        },
-        {
-            "frage": "Wie heißt der Fluss, der durch London fließt?",
-            "antworten": [
-                { "text": "Themse", "korrekt": true },
-                { "text": "Donau", "korrekt": false },
-                { "text": "Rhein", "korrekt": false },
-                { "text": "Elbe", "korrekt": false }
             ],
             "bild": null,
             "selectedAntwort": null
@@ -590,17 +491,6 @@ const alleFragen = {
                 { "text": "Cobra", "korrekt": false },
                 { "text": "Boa", "korrekt": false },
                 { "text": "Anaconda", "korrekt": false }
-            ],
-            "bild": null,
-            "selectedAntwort": null
-        },
-        {
-            "frage": "Was ist die Hauptstadt von Italien?",
-            "antworten": [
-                { "text": "Rom", "korrekt": true },
-                { "text": "Mailand", "korrekt": false },
-                { "text": "Venedig", "korrekt": false },
-                { "text": "Florenz", "korrekt": false }
             ],
             "bild": null,
             "selectedAntwort": null
@@ -667,17 +557,6 @@ const alleFragen = {
                 { "text": "Grün", "korrekt": false },
                 { "text": "Schwarz", "korrekt": false },
                 { "text": "Rot", "korrekt": false }
-            ],
-            "bild": null,
-            "selectedAntwort": null
-        },
-        {
-            "frage": "Wie viele Stunden hat ein Tag (auf der Erde)?",
-            "antworten": [
-                { "text": "24", "korrekt": true },
-                { "text": "12", "korrekt": false },
-                { "text": "18", "korrekt": false },
-                { "text": "30", "korrekt": false }
             ],
             "bild": null,
             "selectedAntwort": null
@@ -804,17 +683,6 @@ const alleFragen = {
             "selectedAntwort": null
         },
         {
-            "frage": "Wer schrieb die Harry-Potter-Bücher?",
-            "antworten": [
-                { "text": "J.K. Rowling", "korrekt": true },
-                { "text": "J.R.R. Tolkien", "korrekt": false },
-                { "text": "Stephen King", "korrekt": false },
-                { "text": "Mark Twain", "korrekt": false }
-            ],
-            "bild": null,
-            "selectedAntwort": null
-        },
-        {
             "frage": "Wer singt das Lied '99 Luftballons'?",
             "antworten": [
                 { "text": "Nena", "korrekt": true },
@@ -876,17 +744,6 @@ const alleFragen = {
                 { "text": "Dollar", "korrekt": false },
                 { "text": "Euro", "korrekt": false },
                 { "text": "Pfund", "korrekt": false }
-            ],
-            "bild": null,
-            "selectedAntwort": null
-        },
-        {
-            "frage": "Wie viele Bundesstaaten hat die Vereinigte Staaten von Amerika?",
-            "antworten": [
-                { "text": "50", "korrekt": true },
-                { "text": "48", "korrekt": false },
-                { "text": "52", "korrekt": false },
-                { "text": "45", "korrekt": false }
             ],
             "bild": null,
             "selectedAntwort": null
@@ -1467,17 +1324,6 @@ const alleFragen = {
             "selectedAntwort": null
         },
         {
-            "frage": "In welcher Einheit wird elektrische Spannung gemessen?",
-            "antworten": [
-                { "text": "Volt", "korrekt": true },
-                { "text": "Ampere", "korrekt": false },
-                { "text": "Watt", "korrekt": false },
-                { "text": "Ohm", "korrekt": false }
-            ],
-            "bild": null,
-            "selectedAntwort": null
-        },
-        {
             "frage": "Wer schrieb den Roman 'Die Verwandlung'?",
             "antworten": [
                 { "text": "Franz Kafka", "korrekt": true },
@@ -1660,17 +1506,6 @@ const alleFragen = {
                 { "text": "KCl", "korrekt": false },
                 { "text": "NaOH", "korrekt": false },
                 { "text": "H2SO4", "korrekt": false }
-            ],
-            "bild": null,
-            "selectedAntwort": null
-        },
-        {
-            "frage": "Wie heißt der Fluss, der durch Paris fließt?",
-            "antworten": [
-                { "text": "Seine", "korrekt": true },
-                { "text": "Thames", "korrekt": false },
-                { "text": "Rhein", "korrekt": false },
-                { "text": "Donau", "korrekt": false }
             ],
             "bild": null,
             "selectedAntwort": null
@@ -1896,17 +1731,6 @@ const alleFragen = {
             "selectedAntwort": null
         },
         {
-            "frage": "Wie viele Minuten hat eine Stunde?",
-            "antworten": [
-                { "text": "60", "korrekt": true },
-                { "text": "50", "korrekt": false },
-                { "text": "100", "korrekt": false },
-                { "text": "120", "korrekt": false }
-            ],
-            "bild": null,
-            "selectedAntwort": null
-        },
-        {
             "frage": "Wie nennt man ein Auto, das mit Strom betrieben wird?",
             "antworten": [
                 { "text": "Elektroauto", "korrekt": true },
@@ -1981,17 +1805,6 @@ const alleFragen = {
                 { text: "Norwegen", korrekt: true },
                 { text: "Spanien", korrekt: false },
                 { text: "Italien", korrekt: false }
-            ],
-            bild: null,
-            selectedAntwort: null
-        },
-        {
-            frage: "Wie viele Planeten hat unser Sonnensystem (Stand 2025)?",
-            antworten: [
-                { text: "8", korrekt: true },
-                { text: "9", korrekt: false },
-                { text: "10", korrekt: false },
-                { text: "7", korrekt: false }
             ],
             bild: null,
             selectedAntwort: null
@@ -2718,17 +2531,6 @@ const alleFragen = {
                 { text: "Feuer", korrekt: false },
                 { text: "Licht", korrekt: false },
                 { text: "Luft", korrekt: false }
-            ],
-            bild: null,
-            selectedAntwort: null
-        },
-        {
-            frage: "Welcher Computerpionier entwickelte das Konzept des Personal Computers (PC)?",
-            antworten: [
-                { text: "Steve Wozniak", korrekt: true },
-                { text: "Steve Jobs", korrekt: false },
-                { text: "Bill Gates", korrekt: false },
-                { text: "Linus Torvalds", korrekt: false }
             ],
             bild: null,
             selectedAntwort: null
