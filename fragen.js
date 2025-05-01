@@ -2552,7 +2552,7 @@ const alleFragen = {
                 { "text": "Ozon", "korrekt": false },
                 { "text": "Osmium", "korrekt": false },
                 { "text": "Silizium", "korrekt": false },
-                { "text": "Wasserstoff", "korrekt": false }
+                { "text": "Wasserstoff", "korrekt": true }
             ],
             "bild": null,
             "selectedAntwort": null
