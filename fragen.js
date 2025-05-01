@@ -421,6 +421,17 @@ const alleFragen = {
     ],
     fragen1000: [
         {
+            frage: "Wie heißt die größte Wüste der Erde?",
+            antworten: [
+                { text: "Antarktis", korrekt: true },
+                { text: "Sahara", korrekt: false },
+                { text: "Gobi", korrekt: false },
+                { text: "Arabische Wüste", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
             frage: "Wie viele Elemente hat die erste Periode des Periodensystems?",
             antworten: [
                 { text: "2", korrekt: true },
@@ -460,6 +471,17 @@ const alleFragen = {
                 { text: "1945", korrekt: false },
                 { text: "1953", korrekt: false },
                 { text: "1989", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Welches ist das schnellste Landtier?",
+            antworten: [
+                { text: "Gepard", korrekt: true },
+                { text: "Löwe", korrekt: false },
+                { text: "Strauß", korrekt: false },
+                { text: "Känguru", korrekt: false }
             ],
             bild: null,
             selectedAntwort: null
@@ -713,6 +735,17 @@ const alleFragen = {
                 { text: "Atlantischer Ozean", korrekt: false },
                 { text: "Indischer Ozean", korrekt: false },
                 { text: "Arktischer Ozean", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
+            frage: "Welches Land hat die meisten Einwohner der Welt?",
+            antworten: [
+                { text: "China", korrekt: true },
+                { text: "Indien", korrekt: false },
+                { text: "USA", korrekt: false },
+                { text: "Indonesien", korrekt: false }
             ],
             bild: null,
             selectedAntwort: null
@@ -1214,6 +1247,17 @@ const alleFragen = {
             bild: null,
             selectedAntwort: null
         },
+        {
+            frage: "Welches Instrument hat 6 Saiten?",
+            antworten: [
+                { text: "Gitarre", korrekt: true },
+                { text: "Violine", korrekt: false },
+                { text: "Cello", korrekt: false },
+                { text: "Banjo", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        }
     ],
     fragen1mio: [
         {
