@@ -36,8 +36,8 @@ const alleFragen = {
         {
             frage: "Wie viele Kontinente beginnen mit dem Buchstaben 'A'?",
             antworten: [
-                { text: "4", korrekt: false },
-                { text: "3", korrekt: true },
+                { text: "4", korrekt: true },
+                { text: "3", korrekt: false },
                 { text: "2", korrekt: false },
                 { text: "1", korrekt: false }
             ],
