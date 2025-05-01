@@ -418,6 +418,545 @@ const alleFragen = {
             bild: null,
             selectedAntwort: null
         },
+        {
+            "frage": "Was ist die Hauptstadt von Deutschland?",
+            "antworten": [
+                { "text": "Berlin", "korrekt": true },
+                { "text": "München", "korrekt": false },
+                { "text": "Hamburg", "korrekt": false },
+                { "text": "Köln", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was ist die chemische Formel von Wasser?",
+            "antworten": [
+                { "text": "H2O", "korrekt": true },
+                { "text": "CO2", "korrekt": false },
+                { "text": "O2", "korrekt": false },
+                { "text": "NaCl", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welches Tier ist das größte Landtier der Erde?",
+            "antworten": [
+                { "text": "Afrikanischer Elefant", "korrekt": true },
+                { "text": "Giraffe", "korrekt": false },
+                { "text": "Nashorn", "korrekt": false },
+                { "text": "Nilpferd", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie viele Tage hat eine Woche?",
+            "antworten": [
+                { "text": "7", "korrekt": true },
+                { "text": "5", "korrekt": false },
+                { "text": "6", "korrekt": false },
+                { "text": "8", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was produziert eine Biene?",
+            "antworten": [
+                { "text": "Honig", "korrekt": true },
+                { "text": "Milch", "korrekt": false },
+                { "text": "Wolle", "korrekt": false },
+                { "text": "Butter", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie viele Kontinente gibt es auf der Erde?",
+            "antworten": [
+                { "text": "7", "korrekt": true },
+                { "text": "5", "korrekt": false },
+                { "text": "6", "korrekt": false },
+                { "text": "8", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was ist die Hauptstadt von Frankreich?",
+            "antworten": [
+                { "text": "Paris", "korrekt": true },
+                { "text": "Lyon", "korrekt": false },
+                { "text": "Marseille", "korrekt": false },
+                { "text": "Toulouse", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welche Sprache wird in Brasilien hauptsächlich gesprochen?",
+            "antworten": [
+                { "text": "Portugiesisch", "korrekt": true },
+                { "text": "Spanisch", "korrekt": false },
+                { "text": "Englisch", "korrekt": false },
+                { "text": "Französisch", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer war der erste Mensch auf dem Mond?",
+            "antworten": [
+                { "text": "Neil Armstrong", "korrekt": true },
+                { "text": "Buzz Aldrin", "korrekt": false },
+                { "text": "Yuri Gagarin", "korrekt": false },
+                { "text": "Michael Collins", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "In welchem Jahr endete der Zweite Weltkrieg?",
+            "antworten": [
+                { "text": "1945", "korrekt": true },
+                { "text": "1939", "korrekt": false },
+                { "text": "1941", "korrekt": false },
+                { "text": "1950", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welche Farbe entsteht, wenn man Rot und Blau mischt?",
+            "antworten": [
+                { "text": "Violett", "korrekt": true },
+                { "text": "Grün", "korrekt": false },
+                { "text": "Braun", "korrekt": false },
+                { "text": "Schwarz", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wieviele Ecken hat ein Quadrat?",
+            "antworten": [
+                { "text": "4", "korrekt": true },
+                { "text": "3", "korrekt": false },
+                { "text": "5", "korrekt": false },
+                { "text": "6", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie heißt der Fluss, der durch London fließt?",
+            "antworten": [
+                { "text": "Themse", "korrekt": true },
+                { "text": "Donau", "korrekt": false },
+                { "text": "Rhein", "korrekt": false },
+                { "text": "Elbe", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie viele Planeten hat unser Sonnensystem?",
+            "antworten": [
+                { "text": "8", "korrekt": true },
+                { "text": "9", "korrekt": false },
+                { "text": "7", "korrekt": false },
+                { "text": "10", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was bedeutet das Symbol \"HTTP\" im Internet?",
+            "antworten": [
+                { "text": "Hypertext Transfer Protocol", "korrekt": true },
+                { "text": "Hierotrans Transfer Methode", "korrekt": false },
+                { "text": "Hypertext Transmission Mode", "korrekt": false },
+                { "text": "Host Transfer Protocol", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welche bekannte Programmiersprache hat einen Schlangen-Tiernamen?",
+            "antworten": [
+                { "text": "Python", "korrekt": true },
+                { "text": "Cobra", "korrekt": false },
+                { "text": "Boa", "korrekt": false },
+                { "text": "Anaconda", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was ist die Hauptstadt von Italien?",
+            "antworten": [
+                { "text": "Rom", "korrekt": true },
+                { "text": "Mailand", "korrekt": false },
+                { "text": "Venedig", "korrekt": false },
+                { "text": "Florenz", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welches Element hat das chemische Symbol \"O\"?",
+            "antworten": [
+                { "text": "Sauerstoff", "korrekt": true },
+                { "text": "Gold", "korrekt": false },
+                { "text": "Kohlenstoff", "korrekt": false },
+                { "text": "Wasserstoff", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie viele Bundesländer hat Deutschland?",
+            "antworten": [
+                { "text": "16", "korrekt": true },
+                { "text": "14", "korrekt": false },
+                { "text": "15", "korrekt": false },
+                { "text": "17", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie viele Zähne hat ein erwachsener Mensch normalerweise?",
+            "antworten": [
+                { "text": "32", "korrekt": true },
+                { "text": "30", "korrekt": false },
+                { "text": "28", "korrekt": false },
+                { "text": "36", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was ist die kleinste Primzahl?",
+            "antworten": [
+                { "text": "2", "korrekt": true },
+                { "text": "1", "korrekt": false },
+                { "text": "3", "korrekt": false },
+                { "text": "5", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welches Land hat die größte Fläche?",
+            "antworten": [
+                { "text": "Russland", "korrekt": true },
+                { "text": "Kanada", "korrekt": false },
+                { "text": "China", "korrekt": false },
+                { "text": "USA", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welche Farbe hat der Himmel bei klarem Wetter (am Tag)?",
+            "antworten": [
+                { "text": "Blau", "korrekt": true },
+                { "text": "Grün", "korrekt": false },
+                { "text": "Schwarz", "korrekt": false },
+                { "text": "Rot", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie viele Stunden hat ein Tag (auf der Erde)?",
+            "antworten": [
+                { "text": "24", "korrekt": true },
+                { "text": "12", "korrekt": false },
+                { "text": "18", "korrekt": false },
+                { "text": "30", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was zeigt ein Thermometer an?",
+            "antworten": [
+                { "text": "Temperatur", "korrekt": true },
+                { "text": "Zeit", "korrekt": false },
+                { "text": "Luftdruck", "korrekt": false },
+                { "text": "Feuchtigkeit", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welches Fahrzeug wird bei Bränden eingesetzt?",
+            "antworten": [
+                { "text": "Feuerwehrfahrzeug", "korrekt": true },
+                { "text": "Krankenwagen", "korrekt": false },
+                { "text": "Polizeiauto", "korrekt": false },
+                { "text": "Müllwagen", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie heißt die deutsche Nationalhymne?",
+            "antworten": [
+                { "text": "Deutschlandlied", "korrekt": true },
+                { "text": "Freude schöner Götterfunken", "korrekt": false },
+                { "text": "Das Lied der Deutschen", "korrekt": false },
+                { "text": "Ode an die Freude", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie viele Spieler hat eine Fußballmannschaft auf dem Feld?",
+            "antworten": [
+                { "text": "11", "korrekt": true },
+                { "text": "9", "korrekt": false },
+                { "text": "10", "korrekt": false },
+                { "text": "12", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer malte die Mona Lisa?",
+            "antworten": [
+                { "text": "Leonardo da Vinci", "korrekt": true },
+                { "text": "Pablo Picasso", "korrekt": false },
+                { "text": "Vincent van Gogh", "korrekt": false },
+                { "text": "Michelangelo", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie nennt man die Wissenschaft vom Weltall?",
+            "antworten": [
+                { "text": "Astronomie", "korrekt": true },
+                { "text": "Biologie", "korrekt": false },
+                { "text": "Physik", "korrekt": false },
+                { "text": "Geologie", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welches Vitamin braucht man für gesundes Sehvermögen?",
+            "antworten": [
+                { "text": "Vitamin A", "korrekt": true },
+                { "text": "Vitamin C", "korrekt": false },
+                { "text": "Vitamin D", "korrekt": false },
+                { "text": "Vitamin B12", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie viele Tage hat der Februar in einem Schaltjahr?",
+            "antworten": [
+                { "text": "29", "korrekt": true },
+                { "text": "28", "korrekt": false },
+                { "text": "30", "korrekt": false },
+                { "text": "31", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Woraus besteht Luft hauptsächlich?",
+            "antworten": [
+                { "text": "Stickstoff", "korrekt": true },
+                { "text": "Sauerstoff", "korrekt": false },
+                { "text": "Kohlendioxid", "korrekt": false },
+                { "text": "Wasser", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Aus welchem Metall besteht eine Autobatterie meistens?",
+            "antworten": [
+                { "text": "Blei", "korrekt": true },
+                { "text": "Kupfer", "korrekt": false },
+                { "text": "Aluminium", "korrekt": false },
+                { "text": "Zink", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was ist ein Nomen?",
+            "antworten": [
+                { "text": "Ein Hauptwort", "korrekt": true },
+                { "text": "Ein Tunwort", "korrekt": false },
+                { "text": "Ein Gefühlswort", "korrekt": false },
+                { "text": "Ein Stichwort", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer schrieb die Harry-Potter-Bücher?",
+            "antworten": [
+                { "text": "J.K. Rowling", "korrekt": true },
+                { "text": "J.R.R. Tolkien", "korrekt": false },
+                { "text": "Stephen King", "korrekt": false },
+                { "text": "Mark Twain", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer singt das Lied '99 Luftballons'?",
+            "antworten": [
+                { "text": "Nena", "korrekt": true },
+                { "text": "Helene Fischer", "korrekt": false },
+                { "text": "Sarah Connor", "korrekt": false },
+                { "text": "Amy Winehouse", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was ist YouTube?",
+            "antworten": [
+                { "text": "Eine Videoplattform", "korrekt": true },
+                { "text": "Ein soziales Netzwerk", "korrekt": false },
+                { "text": "Ein Browserspiel", "korrekt": false },
+                { "text": "Ein E-Mail-Dienst", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer spielte Jack Dawson im Film 'Titanic'?",
+            "antworten": [
+                { "text": "Leonardo DiCaprio", "korrekt": true },
+                { "text": "Brad Pitt", "korrekt": false },
+                { "text": "Johnny Depp", "korrekt": false },
+                { "text": "Tom Hanks", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wofür steht das Akronym 'USB' im Computerbereich?",
+            "antworten": [
+                { "text": "Universal Serial Bus", "korrekt": true },
+                { "text": "User System Backup", "korrekt": false },
+                { "text": "United Security Board", "korrekt": false },
+                { "text": "Universal Software Block", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welcher Planet ist der dritte von der Sonne aus betrachtet?",
+            "antworten": [
+                { "text": "Erde", "korrekt": true },
+                { "text": "Mars", "korrekt": false },
+                { "text": "Venus", "korrekt": false },
+                { "text": "Jupiter", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie lautet die Währung in Japan?",
+            "antworten": [
+                { "text": "Yen", "korrekt": true },
+                { "text": "Dollar", "korrekt": false },
+                { "text": "Euro", "korrekt": false },
+                { "text": "Pfund", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie viele Bundesstaaten hat die Vereinigte Staaten von Amerika?",
+            "antworten": [
+                { "text": "50", "korrekt": true },
+                { "text": "48", "korrekt": false },
+                { "text": "52", "korrekt": false },
+                { "text": "45", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welches Organ pumpt Blut durch den Körper?",
+            "antworten": [
+                { "text": "Das Herz", "korrekt": true },
+                { "text": "Die Lunge", "korrekt": false },
+                { "text": "Die Leber", "korrekt": false },
+                { "text": "Die Niere", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie heißt der größte Kontinent der Erde?",
+            "antworten": [
+                { "text": "Asien", "korrekt": true },
+                { "text": "Afrika", "korrekt": false },
+                { "text": "Europa", "korrekt": false },
+                { "text": "Antarktika", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wieviele Monate haben 31 Tage?",
+            "antworten": [
+                { "text": "7", "korrekt": true },
+                { "text": "4", "korrekt": false },
+                { "text": "8", "korrekt": false },
+                { "text": "5", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welche Farbe haben Smaragde?",
+            "antworten": [
+                { "text": "Grün", "korrekt": true },
+                { "text": "Blau", "korrekt": false },
+                { "text": "Rot", "korrekt": false },
+                { "text": "Gelb", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was ist das chemische Symbol für Gold?",
+            "antworten": [
+                { "text": "Au", "korrekt": true },
+                { "text": "Ag", "korrekt": false },
+                { "text": "Fe", "korrekt": false },
+                { "text": "Pb", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wofür steht das 'LED' bei Leuchtdioden?",
+            "antworten": [
+                { "text": "Light Emitting Diode", "korrekt": true },
+                { "text": "Light Energy Device", "korrekt": false },
+                { "text": "Low Energy Diode", "korrekt": false },
+                { "text": "Light Emission Display", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        }
     ],
     fragen1000: [
         {
@@ -926,6 +1465,480 @@ const alleFragen = {
             bild: null,
             selectedAntwort: null
         },
+
+        {
+            "frage": "Wie heißt die Hauptstadt von Australien?",
+            "antworten": [
+                { "text": "Canberra", "korrekt": true },
+                { "text": "Sydney", "korrekt": false },
+                { "text": "Melbourne", "korrekt": false },
+                { "text": "Brisbane", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was ist die größte Insel der Welt?",
+            "antworten": [
+                { "text": "Grönland", "korrekt": true },
+                { "text": "Neuguinea", "korrekt": false },
+                { "text": "Borneo", "korrekt": false },
+                { "text": "Madagaskar", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "In welcher Einheit wird elektrische Spannung gemessen?",
+            "antworten": [
+                { "text": "Volt", "korrekt": true },
+                { "text": "Ampere", "korrekt": false },
+                { "text": "Watt", "korrekt": false },
+                { "text": "Ohm", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer schrieb den Roman 'Die Verwandlung'?",
+            "antworten": [
+                { "text": "Franz Kafka", "korrekt": true },
+                { "text": "Johann Wolfgang von Goethe", "korrekt": false },
+                { "text": "Thomas Mann", "korrekt": false },
+                { "text": "Friedrich Schiller", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "In welchem Jahr fiel die Berliner Mauer?",
+            "antworten": [
+                { "text": "1989", "korrekt": true },
+                { "text": "1990", "korrekt": false },
+                { "text": "1987", "korrekt": false },
+                { "text": "1991", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer war der erste Bundeskanzler der Bundesrepublik Deutschland?",
+            "antworten": [
+                { "text": "Konrad Adenauer", "korrekt": true },
+                { "text": "Willy Brandt", "korrekt": false },
+                { "text": "Helmut Kohl", "korrekt": false },
+                { "text": "Ludwig Erhard", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welches chemische Element hat das Symbol 'Na'?",
+            "antworten": [
+                { "text": "Natrium", "korrekt": true },
+                { "text": "Nickel", "korrekt": false },
+                { "text": "Neon", "korrekt": false },
+                { "text": "Nobelium", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welches Meer liegt östlich von Ägypten?",
+            "antworten": [
+                { "text": "Rotes Meer", "korrekt": true },
+                { "text": "Mittelmeer", "korrekt": false },
+                { "text": "Indischer Ozean", "korrekt": false },
+                { "text": "Atlantischer Ozean", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welche Programmiersprache wird oft für Datenanalyse verwendet?",
+            "antworten": [
+                { "text": "Python", "korrekt": true },
+                { "text": "Java", "korrekt": false },
+                { "text": "COBOL", "korrekt": false },
+                { "text": "Basic", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was ist das größte Organ des menschlichen Körpers?",
+            "antworten": [
+                { "text": "Haut", "korrekt": true },
+                { "text": "Leber", "korrekt": false },
+                { "text": "Herz", "korrekt": false },
+                { "text": "Lunge", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer war der 16. Präsident der USA?",
+            "antworten": [
+                { "text": "Abraham Lincoln", "korrekt": true },
+                { "text": "George Washington", "korrekt": false },
+                { "text": "Thomas Jefferson", "korrekt": false },
+                { "text": "John F. Kennedy", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer erfand das Automobil?",
+            "antworten": [
+                { "text": "Karl Benz", "korrekt": true },
+                { "text": "Henry Ford", "korrekt": false },
+                { "text": "Gottlieb Daimler", "korrekt": false },
+                { "text": "Nikolaus Otto", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie lautet die Formel für die Fläche eines Kreises?",
+            "antworten": [
+                { "text": "π · r²", "korrekt": true },
+                { "text": "2 · π · r", "korrekt": false },
+                { "text": "r³", "korrekt": false },
+                { "text": "√(π · r)", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "In welchem Jahr startete der erste Mensch ins All?",
+            "antworten": [
+                { "text": "1961", "korrekt": true },
+                { "text": "1957", "korrekt": false },
+                { "text": "1965", "korrekt": false },
+                { "text": "1971", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer ist der Autor von '1984'?",
+            "antworten": [
+                { "text": "George Orwell", "korrekt": true },
+                { "text": "Aldous Huxley", "korrekt": false },
+                { "text": "Ray Bradbury", "korrekt": false },
+                { "text": "Isaac Asimov", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer entdeckte die Röntgenstrahlen?",
+            "antworten": [
+                { "text": "Wilhelm Conrad Röntgen", "korrekt": true },
+                { "text": "Albert Einstein", "korrekt": false },
+                { "text": "Max Planck", "korrekt": false },
+                { "text": "Werner Heisenberg", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie nennt man einen Wissenschaftler, der den Zusammenhang zwischen Strom und Magnetismus untersucht?",
+            "antworten": [
+                { "text": "Elektromagnetiker", "korrekt": true },
+                { "text": "Hydrologe", "korrekt": false },
+                { "text": "Meteorologe", "korrekt": false },
+                { "text": "Botaniker", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welches Sprichwort bedeutet, etwas ganz genau richtig zu beschreiben?",
+            "antworten": [
+                { "text": "Den Nagel auf den Kopf treffen", "korrekt": true },
+                { "text": "Perlen vor die Säue werfen", "korrekt": false },
+                { "text": "Mit dem Kopf durch die Wand", "korrekt": false },
+                { "text": "Jemandem einen Bären aufbinden", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer schrieb das Drama 'Faust'?",
+            "antworten": [
+                { "text": "Johann Wolfgang von Goethe", "korrekt": true },
+                { "text": "Friedrich Schiller", "korrekt": false },
+                { "text": "Bertolt Brecht", "korrekt": false },
+                { "text": "Heinrich Heine", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie lautet die chemische Formel von Salz (Kochsalz)?",
+            "antworten": [
+                { "text": "NaCl", "korrekt": true },
+                { "text": "KCl", "korrekt": false },
+                { "text": "NaOH", "korrekt": false },
+                { "text": "H2SO4", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie heißt der Fluss, der durch Paris fließt?",
+            "antworten": [
+                { "text": "Seine", "korrekt": true },
+                { "text": "Thames", "korrekt": false },
+                { "text": "Rhein", "korrekt": false },
+                { "text": "Donau", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welcher Kontinent wird auch als 'dunkler Kontinent' bezeichnet?",
+            "antworten": [
+                { "text": "Afrika", "korrekt": true },
+                { "text": "Asien", "korrekt": false },
+                { "text": "Europa", "korrekt": false },
+                { "text": "Südamerika", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was ist die Hauptstadt von Kanada?",
+            "antworten": [
+                { "text": "Ottawa", "korrekt": true },
+                { "text": "Toronto", "korrekt": false },
+                { "text": "Vancouver", "korrekt": false },
+                { "text": "Montreal", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer war bekannt für die Relativitätstheorie?",
+            "antworten": [
+                { "text": "Albert Einstein", "korrekt": true },
+                { "text": "Isaac Newton", "korrekt": false },
+                { "text": "Galileo Galilei", "korrekt": false },
+                { "text": "Stephen Hawking", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was bedeutet die Redewendung 'aus einer Mücke einen Elefanten machen'?",
+            "antworten": [
+                { "text": "Etwas übertreiben", "korrekt": true },
+                { "text": "Sehr klein rechnen", "korrekt": false },
+                { "text": "Ein Gerücht erzählen", "korrekt": false },
+                { "text": "Unmögliches fordern", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welcher Planet ist nach der Erde am nächsten?",
+            "antworten": [
+                { "text": "Venus", "korrekt": true },
+                { "text": "Mars", "korrekt": false },
+                { "text": "Merkur", "korrekt": false },
+                { "text": "Jupiter", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie viele Zentimeter hat ein Meter?",
+            "antworten": [
+                { "text": "100", "korrekt": true },
+                { "text": "10", "korrekt": false },
+                { "text": "1000", "korrekt": false },
+                { "text": "1", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer malte das Gemälde 'Starry Night' ('Sternennacht')?",
+            "antworten": [
+                { "text": "Vincent van Gogh", "korrekt": true },
+                { "text": "Pablo Picasso", "korrekt": false },
+                { "text": "Claude Monet", "korrekt": false },
+                { "text": "Edvard Munch", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie heißt der Prozess, bei dem Pflanzen Lichtenergie in chemische Energie umwandeln?",
+            "antworten": [
+                { "text": "Photosynthese", "korrekt": true },
+                { "text": "Fermentation", "korrekt": false },
+                { "text": "Oxidation", "korrekt": false },
+                { "text": "Respiration", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was ist das Ergebnis von 15 × 3?",
+            "antworten": [
+                { "text": "45", "korrekt": true },
+                { "text": "18", "korrekt": false },
+                { "text": "35", "korrekt": false },
+                { "text": "50", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welches Organ produziert Insulin?",
+            "antworten": [
+                { "text": "Bauchspeicheldrüse (Pankreas)", "korrekt": true },
+                { "text": "Leber", "korrekt": false },
+                { "text": "Milz", "korrekt": false },
+                { "text": "Niere", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welche Sprache hat die meisten Muttersprachler weltweit?",
+            "antworten": [
+                { "text": "Mandarin-Chinesisch", "korrekt": true },
+                { "text": "Spanisch", "korrekt": false },
+                { "text": "Englisch", "korrekt": false },
+                { "text": "Hindi", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie heißt die Hauptstadt von Japan?",
+            "antworten": [
+                { "text": "Tokio", "korrekt": true },
+                { "text": "Kyoto", "korrekt": false },
+                { "text": "Osaka", "korrekt": false },
+                { "text": "Seoul", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was ist das Symbol für Gold im Periodensystem?",
+            "antworten": [
+                { "text": "Au", "korrekt": true },
+                { "text": "Ag", "korrekt": false },
+                { "text": "Cu", "korrekt": false },
+                { "text": "Fe", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welcher französische Nationalfeiertag wird am 14. Juli gefeiert?",
+            "antworten": [
+                { "text": "Sturm auf die Bastille", "korrekt": true },
+                { "text": "Ende des Ersten Weltkriegs", "korrekt": false },
+                { "text": "Verfassungsgeburtstag", "korrekt": false },
+                { "text": "Tag der Arbeit", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welche Stadt ist bekannt als 'Big Apple'?",
+            "antworten": [
+                { "text": "New York", "korrekt": true },
+                { "text": "San Francisco", "korrekt": false },
+                { "text": "London", "korrekt": false },
+                { "text": "Paris", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer hat die Theorie der Evolution durch natürliche Auslese formuliert?",
+            "antworten": [
+                { "text": "Charles Darwin", "korrekt": true },
+                { "text": "Gregor Mendel", "korrekt": false },
+                { "text": "Isaac Newton", "korrekt": false },
+                { "text": "Louis Pasteur", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was ist die Summe der Innenwinkel eines Dreiecks?",
+            "antworten": [
+                { "text": "180°", "korrekt": true },
+                { "text": "90°", "korrekt": false },
+                { "text": "360°", "korrekt": false },
+                { "text": "270°", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welcher Fluss ist mit einer Länge von ca. 6.650 km der längste der Welt?",
+            "antworten": [
+                { "text": "Nil", "korrekt": true },
+                { "text": "Amazonas", "korrekt": false },
+                { "text": "Jangtse", "korrekt": false },
+                { "text": "Mississippi", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was bezeichnet man als 'Big Data'?",
+            "antworten": [
+                { "text": "Extrem große Datenmengen", "korrekt": true },
+                { "text": "Kleine Datenmengen", "korrekt": false },
+                { "text": "Sichere Datenverbindung", "korrekt": false },
+                { "text": "Datenvisualisierung", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was bedeutet das lateinische Wort 'Anno Domini'?",
+            "antworten": [
+                { "text": "Im Jahre des Herrn", "korrekt": true },
+                { "text": "Im Sonnenjahr", "korrekt": false },
+                { "text": "Ab dem heutigen Tag", "korrekt": false },
+                { "text": "Im Mittelalter", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie viele Minuten hat eine Stunde?",
+            "antworten": [
+                { "text": "60", "korrekt": true },
+                { "text": "50", "korrekt": false },
+                { "text": "100", "korrekt": false },
+                { "text": "120", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie nennt man ein Auto, das mit Strom betrieben wird?",
+            "antworten": [
+                { "text": "Elektroauto", "korrekt": true },
+                { "text": "Dieselauto", "korrekt": false },
+                { "text": "Hybridauto", "korrekt": false },
+                { "text": "Wasserstoffauto", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        }
     ],
     fragen32000: [
         {
@@ -1257,6 +2270,422 @@ const alleFragen = {
             ],
             bild: null,
             selectedAntwort: null
+        },
+
+        {
+            "frage": "Wie hoch ist der Mount Everest etwa (in Metern)?",
+            "antworten": [
+                { "text": "8848", "korrekt": true },
+                { "text": "8850", "korrekt": false },
+                { "text": "8633", "korrekt": false },
+                { "text": "9022", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer war der letzte deutsche Kaiser (Kaiserreich)?",
+            "antworten": [
+                { "text": "Wilhelm II.", "korrekt": true },
+                { "text": "Friedrich III.", "korrekt": false },
+                { "text": "Wilhelm I.", "korrekt": false },
+                { "text": "Heinrich", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie lautet der Satz des Pythagoras in der Geometrie?",
+            "antworten": [
+                { "text": "a² + b² = c²", "korrekt": true },
+                { "text": "a + b = c", "korrekt": false },
+                { "text": "a³ + b³ = c³", "korrekt": false },
+                { "text": "a² - b² = c²", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "In welchem Jahr erklärte die französische Nationalversammlung die Menschenrechte?",
+            "antworten": [
+                { "text": "1789", "korrekt": true },
+                { "text": "1792", "korrekt": false },
+                { "text": "1776", "korrekt": false },
+                { "text": "1804", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer war der sowjetische Staatschef während des Zweiten Weltkriegs?",
+            "antworten": [
+                { "text": "Josef Stalin", "korrekt": true },
+                { "text": "Wladimir Lenin", "korrekt": false },
+                { "text": "Nikita Chruschtschow", "korrekt": false },
+                { "text": "Leonid Breschnew", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was ist die kleinste Quark-Flavour?",
+            "antworten": [
+                { "text": "Up-Quark", "korrekt": true },
+                { "text": "Down-Quark", "korrekt": false },
+                { "text": "Strange-Quark", "korrekt": false },
+                { "text": "Top-Quark", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer bewies 1905 die spezielle Relativitätstheorie?",
+            "antworten": [
+                { "text": "Albert Einstein", "korrekt": true },
+                { "text": "Max Planck", "korrekt": false },
+                { "text": "Niels Bohr", "korrekt": false },
+                { "text": "Werner Heisenberg", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wofür steht die Abkürzung DNA?",
+            "antworten": [
+                { "text": "Desoxyribonukleinsäure", "korrekt": true },
+                { "text": "Deoxyribose Nuklein", "korrekt": false },
+                { "text": "Deoxynuage", "korrekt": false },
+                { "text": "Desoxyin", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welche Einheit wird verwendet, um die Lichtstärke zu messen?",
+            "antworten": [
+                { "text": "Candela", "korrekt": true },
+                { "text": "Lumen", "korrekt": false },
+                { "text": "Lux", "korrekt": false },
+                { "text": "Watt", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer war der erste Mensch, der die Erdumlaufbahn (Weltall) umrundete?",
+            "antworten": [
+                { "text": "Yuri Gagarin", "korrekt": true },
+                { "text": "John Glenn", "korrekt": false },
+                { "text": "Neil Armstrong", "korrekt": false },
+                { "text": "Michael Collins", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer führte den Begriff 'Atom' in der antiken Philosophie ein?",
+            "antworten": [
+                { "text": "Demokrit", "korrekt": true },
+                { "text": "Pythagoras", "korrekt": false },
+                { "text": "Platon", "korrekt": false },
+                { "text": "Aristoteles", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie lautet das Newtonsche Gravitationsgesetz (Formel)?",
+            "antworten": [
+                { "text": "F = G·(m₁m₂/r²)", "korrekt": true },
+                { "text": "F = m·a", "korrekt": false },
+                { "text": "E = m·c²", "korrekt": false },
+                { "text": "F = q₁q₂/(4πε₀r)", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer entdeckte das Penicillin im Jahr 1928?",
+            "antworten": [
+                { "text": "Alexander Fleming", "korrekt": true },
+                { "text": "Louis Pasteur", "korrekt": false },
+                { "text": "Robert Koch", "korrekt": false },
+                { "text": "Paul Ehrlich", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welcher Nobelpreisträger entwickelte die Quantenmechanik?",
+            "antworten": [
+                { "text": "Werner Heisenberg", "korrekt": true },
+                { "text": "Erwin Schrödinger", "korrekt": false },
+                { "text": "Max Born", "korrekt": false },
+                { "text": "Niels Bohr", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie heißt das krankhafte Verlangen, viele Pillen zu nehmen, in einem Wort?",
+            "antworten": [
+                { "text": "Pharmakomanie", "korrekt": true },
+                { "text": "Morphinismus", "korrekt": false },
+                { "text": "Pharmakophilie", "korrekt": false },
+                { "text": "Drogensucht", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie hoch ist die Lichtgeschwindigkeit (in m/s)?",
+            "antworten": [
+                { "text": "299792458", "korrekt": true },
+                { "text": "300000000", "korrekt": false },
+                { "text": "150000000", "korrekt": false },
+                { "text": "3·10^8", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was beschreibt das Heisenbergsche Unschärfeprinzip?",
+            "antworten": [
+                { "text": "Man kann Ort und Impuls eines Teilchens nicht gleichzeitig genau messen", "korrekt": true },
+                { "text": "Zeit und Energie sind genau festzulegen", "korrekt": false },
+                { "text": "Masse und Zeit eines Teilchens sind unbestimmt", "korrekt": false },
+                { "text": "Elektron und Proton können nicht gleichzeitig existieren", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer war der Autor von 'Im Westen nichts Neues'?",
+            "antworten": [
+                { "text": "Erich Maria Remarque", "korrekt": true },
+                { "text": "Heinrich Böll", "korrekt": false },
+                { "text": "Thomas Mann", "korrekt": false },
+                { "text": "Bertolt Brecht", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welche Programmiersprache verwendet die Plattform Android vorrangig?", "antworten": [
+                { "text": "Java", "korrekt": true },
+                { "text": "C#", "korrekt": false },
+                { "text": "Python", "korrekt": false },
+                { "text": "Ruby", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "In welchem Jahrhundert begann die europäische Aufklärung?",
+            "antworten": [
+                { "text": "17. Jahrhundert", "korrekt": true },
+                { "text": "16. Jahrhundert", "korrekt": false },
+                { "text": "18. Jahrhundert", "korrekt": false },
+                { "text": "19. Jahrhundert", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was misst die Einheit 'Ohm'?",
+            "antworten": [
+                { "text": "Elektrischen Widerstand", "korrekt": true },
+                { "text": "Spannung", "korrekt": false },
+                { "text": "Stromstärke", "korrekt": false },
+                { "text": "Leistung", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer war bekannt als 'King of Pop'?",
+            "antworten": [
+                { "text": "Michael Jackson", "korrekt": true },
+                { "text": "Freddie Mercury", "korrekt": false },
+                { "text": "Prince", "korrekt": false },
+                { "text": "Elvis Presley", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welcher Planet hat die größten Lebensfreundlichkeit?",
+            "antworten": [
+                { "text": "Erde", "korrekt": true },
+                { "text": "Mars", "korrekt": false },
+                { "text": "Venus", "korrekt": false },
+                { "text": "Europa", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer war die Regentin des Vereinigten Königreichs im 19. Jahrhundert?",
+            "antworten": [
+                { "text": "Queen Victoria", "korrekt": true },
+                { "text": "Queen Elizabeth I.", "korrekt": false },
+                { "text": "Queen Anne", "korrekt": false },
+                { "text": "Queen Mary I.", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welches chemische Element hat das Symbol 'O'?",
+            "antworten": [
+                { "text": "Ozon", "korrekt": false },
+                { "text": "Osmium", "korrekt": false },
+                { "text": "Silizium", "korrekt": false },
+                { "text": "Wasserstoff", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie viele Figuren hat jeder Spieler zu Beginn einer Schachpartie?", "antworten": [
+                { "text": "16", "korrekt": true },
+                { "text": "12", "korrekt": false },
+                { "text": "20", "korrekt": false },
+                { "text": "15", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer sang den Rocksong 'Bohemian Rhapsody'?",
+            "antworten": [
+                { "text": "Queen", "korrekt": true },
+                { "text": "The Beatles", "korrekt": false },
+                { "text": "Nirvana", "korrekt": false },
+                { "text": "Rolling Stones", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Woraus sind Proteine grundsätzlich aufgebaut?",
+            "antworten": [
+                { "text": "Aminosäuren", "korrekt": true },
+                { "text": "Zuckern", "korrekt": false },
+                { "text": "Fettsäuren", "korrekt": false },
+                { "text": "Nukleinsäuren", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was versteht man unter dem Doppler-Effekt?",
+            "antworten": [
+                { "text": "Die Änderung der Wellenfrequenz durch Bewegung der Quelle", "korrekt": true },
+                { "text": "Die Brechung von Licht", "korrekt": false },
+                { "text": "Die Lichtgeschwindigkeit ist konstant", "korrekt": false },
+                { "text": "Die Entstehung von Schall", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer prägte den Satz 'Cogito, ergo sum'?", "antworten": [
+                { "text": "René Descartes", "korrekt": true },
+                { "text": "Immanuel Kant", "korrekt": false },
+                { "text": "Friedrich Nietzsche", "korrekt": false },
+                { "text": "Platon", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welches ist der größte Knochen im menschlichen Körper?",
+            "antworten": [
+                { "text": "Oberschenkelknochen (Femur)", "korrekt": true },
+                { "text": "Schädelknochen", "korrekt": false },
+                { "text": "Wirbelkörper", "korrekt": false },
+                { "text": "Schienbein", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was ist die kleinste selbstständige Einheit des Lebens?",
+            "antworten": [
+                { "text": "Zelle", "korrekt": true },
+                { "text": "Atom", "korrekt": false },
+                { "text": "Molekül", "korrekt": false },
+                { "text": "Organ", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was ist die chemische Formel für Ammoniak?",
+            "antworten": [
+                { "text": "NH3", "korrekt": true },
+                { "text": "CH4", "korrekt": false },
+                { "text": "H2O", "korrekt": false },
+                { "text": "NaCl", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welcher Planet wird manchmal als Erdzwilling bezeichnet?",
+            "antworten": [
+                { "text": "Venus", "korrekt": true },
+                { "text": "Mars", "korrekt": false },
+                { "text": "Jupiter", "korrekt": false },
+                { "text": "Saturn", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welcher Fluss durchfließt die Stadt Rom?",
+            "antworten": [
+                { "text": "Tiber", "korrekt": true },
+                { "text": "Rhein", "korrekt": false },
+                { "text": "Seine", "korrekt": false },
+                { "text": "Donau", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welches Atom hat 8 Protonen im Kern?",
+            "antworten": [
+                { "text": "Sauerstoff", "korrekt": true },
+                { "text": "Kohlenstoff", "korrekt": false },
+                { "text": "Helium", "korrekt": false },
+                { "text": "Neon", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer malte 'Das Mädchen mit dem Perlenohrring'?",
+            "antworten": [
+                { "text": "Johannes Vermeer", "korrekt": true },
+                { "text": "Rembrandt", "korrekt": false },
+                { "text": "Pieter Bruegel", "korrekt": false },
+                { "text": "Vincent van Gogh", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was versteht man unter einem Bit in der Informatik?",
+            "antworten": [
+                { "text": "Die kleinste Informationseinheit (0 oder 1)", "korrekt": true },
+                { "text": "Eine Einheit für Datenvolumen (1024 Bytes)", "korrekt": false },
+                { "text": "Ein Prozessorregister", "korrekt": false },
+                { "text": "Eine Netzwerkeinheit", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
         }
     ],
     fragen1mio: [
@@ -1446,6 +2875,456 @@ const alleFragen = {
             ],
             bild: null,
             selectedAntwort: null
+        },
+        {
+            "frage": "Welches Land hat weltweit den größten nachgewiesenen Ölreserven?",
+            "antworten": [
+                { "text": "Venezuela", "korrekt": true },
+                { "text": "Saudi-Arabien", "korrekt": false },
+                { "text": "USA", "korrekt": false },
+                { "text": "Russland", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie viele Nullen hat eine Trillion (deutsche Zählweise)?",
+            "antworten": [
+                { "text": "18", "korrekt": true },
+                { "text": "12", "korrekt": false },
+                { "text": "15", "korrekt": false },
+                { "text": "9", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie viele Buchstaben hat das kyrillische Alphabet (russische Variante)?",
+            "antworten": [
+                { "text": "33", "korrekt": true },
+                { "text": "30", "korrekt": false },
+                { "text": "26", "korrekt": false },
+                { "text": "38", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welches chemische Element hat im Periodensystem das Symbol 'Og'?",
+            "antworten": [
+                { "text": "Oganesson", "korrekt": true },
+                { "text": "Osmium", "korrekt": false },
+                { "text": "Gold", "korrekt": false },
+                { "text": "Zink", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer gewann 2024 den Nobelpreis für Literatur?",
+            "antworten": [
+                { "text": "Han Kang", "korrekt": true },
+                { "text": "John Green", "korrekt": false },
+                { "text": "Murakami Haruki", "korrekt": false },
+                { "text": "J.K. Rowling", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wann wurde die NASA-Mission 'Artemis I' gestartet?",
+            "antworten": [
+                { "text": "2022", "korrekt": true },
+                { "text": "2023", "korrekt": false },
+                { "text": "2021", "korrekt": false },
+                { "text": "2024", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer komponierte den Soundtrack für den Film 'Inception' (2010)?",
+            "antworten": [
+                { "text": "Hans Zimmer", "korrekt": true },
+                { "text": "John Williams", "korrekt": false },
+                { "text": "James Newton Howard", "korrekt": false },
+                { "text": "Ennio Morricone", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welches Gas hat das chemische Symbol 'Xe'?",
+            "antworten": [
+                { "text": "Xenon", "korrekt": true },
+                { "text": "Xylen", "korrekt": false },
+                { "text": "Neon", "korrekt": false },
+                { "text": "Argon", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie viele Ringe hat das olympische Symbol?",
+            "antworten": [
+                { "text": "5", "korrekt": true },
+                { "text": "6", "korrekt": false },
+                { "text": "4", "korrekt": false },
+                { "text": "3", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was war die Hauptstadt des Osmanischen Reiches im 18. Jahrhundert?",
+            "antworten": [
+                { "text": "Konstantinopel", "korrekt": true },
+                { "text": "Ankara", "korrekt": false },
+                { "text": "Bagdad", "korrekt": false },
+                { "text": "Kairo", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer war der regierende Kaiser Japans während des Zweiten Weltkriegs?",
+            "antworten": [
+                { "text": "Hirohito", "korrekt": true },
+                { "text": "Meiji", "korrekt": false },
+                { "text": "Taishō", "korrekt": false },
+                { "text": "Akihito", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welche Programmiersprache wurde von Brendan Eich entwickelt?",
+            "antworten": [
+                { "text": "JavaScript", "korrekt": true },
+                { "text": "Python", "korrekt": false },
+                { "text": "Ruby", "korrekt": false },
+                { "text": "Java", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welcher Fluss ist mit ca. 6.650 km Länge der längste in Asien?",
+            "antworten": [
+                { "text": "Jangtse", "korrekt": true },
+                { "text": "Gelber Fluss", "korrekt": false },
+                { "text": "Indus", "korrekt": false },
+                { "text": "Mekong", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie viele Planeten unseres Sonnensystems sind Gasriesen?",
+            "antworten": [
+                { "text": "4", "korrekt": true },
+                { "text": "3", "korrekt": false },
+                { "text": "2", "korrekt": false },
+                { "text": "5", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was ist die SI-Einheit der magnetischen Flussdichte?",
+            "antworten": [
+                { "text": "Tesla", "korrekt": true },
+                { "text": "Gauss", "korrekt": false },
+                { "text": "Henry", "korrekt": false },
+                { "text": "Weber", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer entwickelte die Programmiersprache C++?",
+            "antworten": [
+                { "text": "Bjarne Stroustrup", "korrekt": true },
+                { "text": "Dennis Ritchie", "korrekt": false },
+                { "text": "James Gosling", "korrekt": false },
+                { "text": "Guido van Rossum", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "In welchem Jahr begann die französische Revolution?",
+            "antworten": [
+                { "text": "1789", "korrekt": true },
+                { "text": "1776", "korrekt": false },
+                { "text": "1804", "korrekt": false },
+                { "text": "1799", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer malte das Gemälde 'Die Erschaffung Adams'?",
+            "antworten": [
+                { "text": "Michelangelo", "korrekt": true },
+                { "text": "Raphael", "korrekt": false },
+                { "text": "Leonardo da Vinci", "korrekt": false },
+                { "text": "Caravaggio", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie viele Inseln gehören etwa zu Indonesien?",
+            "antworten": [
+                { "text": "über 17.000", "korrekt": true },
+                { "text": "etwa 7.000", "korrekt": false },
+                { "text": "ca. 5.000", "korrekt": false },
+                { "text": "10.000", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welches chemische Element ist nach dem Planeten Pluto benannt?",
+            "antworten": [
+                { "text": "Plutonium", "korrekt": true },
+                { "text": "Neptunium", "korrekt": false },
+                { "text": "Uran", "korrekt": false },
+                { "text": "Mercury", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welches Gas hat den niedrigsten Siedepunkt?",
+            "antworten": [
+                { "text": "Helium", "korrekt": true },
+                { "text": "Wasserstoff", "korrekt": false },
+                { "text": "Neon", "korrekt": false },
+                { "text": "Krypton", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welcher Malerstil prägt 'Die Freiheitsführerin' (Delacroix)?",
+            "antworten": [
+                { "text": "Romantik", "korrekt": true },
+                { "text": "Impressionismus", "korrekt": false },
+                { "text": "Barock", "korrekt": false },
+                { "text": "Klassizismus", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer komponierte die 'Goldberg-Variationen'?",
+            "antworten": [
+                { "text": "Johann Sebastian Bach", "korrekt": true },
+                { "text": "Wolfgang Amadeus Mozart", "korrekt": false },
+                { "text": "Ludwig van Beethoven", "korrekt": false },
+                { "text": "Johannes Brahms", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie lautet der chemische Name für Trinkalkohol (CH₃CH₂OH)?",
+            "antworten": [
+                { "text": "Ethanol", "korrekt": true },
+                { "text": "Methanol", "korrekt": false },
+                { "text": "Propanol", "korrekt": false },
+                { "text": "Butanol", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "In welchem Jahr wurde die Berliner Mauer gebaut?",
+            "antworten": [
+                { "text": "1961", "korrekt": true },
+                { "text": "1960", "korrekt": false },
+                { "text": "1962", "korrekt": false },
+                { "text": "1959", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welches Land ist flächenmäßig das größte in Afrika?",
+            "antworten": [
+                { "text": "Algerien", "korrekt": true },
+                { "text": "Sudan", "korrekt": false },
+                { "text": "Demokratische Republik Kongo", "korrekt": false },
+                { "text": "Libyen", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer schrieb die Oper 'Die Zauberflöte'?",
+            "antworten": [
+                { "text": "Wolfgang Amadeus Mozart", "korrekt": true },
+                { "text": "Ludwig van Beethoven", "korrekt": false },
+                { "text": "Richard Wagner", "korrekt": false },
+                { "text": "Giuseppe Verdi", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer entdeckte, dass die Milchstraße aus vielen Galaxien besteht?",
+            "antworten": [
+                { "text": "Edwin Hubble", "korrekt": true },
+                { "text": "Albert Einstein", "korrekt": false },
+                { "text": "Galileo Galilei", "korrekt": false },
+                { "text": "Nikolai Kinoshita", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "In welchem Land befindet sich der höchste Berg der Erde (Mount Everest)?",
+            "antworten": [
+                { "text": "Nepal", "korrekt": true },
+                { "text": "China", "korrekt": false },
+                { "text": "Indien", "korrekt": false },
+                { "text": "Bhutan", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welche chemische Summenformel hat Salzsäure?",
+            "antworten": [
+                { "text": "HCl", "korrekt": true },
+                { "text": "NaCl", "korrekt": false },
+                { "text": "H₂SO₄", "korrekt": false },
+                { "text": "HNO₃", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welches literarische Werk beginnt mit 'Es war die beste Zeit, es war die schlechteste Zeit'?",
+            "antworten": [
+                { "text": "Eine Geschichte aus zwei Städten", "korrekt": true },
+                { "text": "Krieg und Frieden", "korrekt": false },
+                { "text": "Die Scheindlichkeit der englischen Nation", "korrekt": false },
+                { "text": "Sturmhimmel", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welches Land hat den höchsten Berg außerhalb Asiens?",
+            "antworten": [
+                { "text": "Argentinien", "korrekt": true },
+                { "text": "USA", "korrekt": false },
+                { "text": "Nepal", "korrekt": false },
+                { "text": "Chile", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie viele Großbuchstaben gibt es in einem traditionellen Schachbrett?",
+            "antworten": [
+                { "text": "32", "korrekt": true },
+                { "text": "52", "korrekt": false },
+                { "text": "64", "korrekt": false },
+                { "text": "16", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie viele Ozeane gibt es auf der Erde?",
+            "antworten": [
+                { "text": "5", "korrekt": true },
+                { "text": "4", "korrekt": false },
+                { "text": "6", "korrekt": false },
+                { "text": "7", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wie viele Chromosomen hat ein Gorilla normalerweise?",
+            "antworten": [
+                { "text": "48", "korrekt": true },
+                { "text": "46", "korrekt": false },
+                { "text": "44", "korrekt": false },
+                { "text": "52", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wieviel Prozent der Erdoberfläche besteht aus Wasser?",
+            "antworten": [
+                { "text": "71", "korrekt": true },
+                { "text": "61", "korrekt": false },
+                { "text": "81", "korrekt": false },
+                { "text": "51", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer komponierte die deutsche Nationalhymne (Melodie)?",
+            "antworten": [
+                { "text": "Joseph Haydn", "korrekt": true },
+                { "text": "Ludwig van Beethoven", "korrekt": false },
+                { "text": "Johann Sebastian Bach", "korrekt": false },
+                { "text": "Richard Wagner", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Was steht in der Genetik für die Abkürzung DNA?", "antworten": [
+                { "text": "Desoxyribonukleinsäure", "korrekt": true },
+                { "text": "Ribonukleinsäure", "korrekt": false },
+                { "text": "Desoxyriboprotein", "korrekt": false },
+                { "text": "Desoxyribonukleotid", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Wer war der letzte Monarch Frankreichs?",
+            "antworten": [
+                { "text": "Napoleon III.", "korrekt": true },
+                { "text": "Louis XVI.", "korrekt": false },
+                { "text": "Karl X.", "korrekt": false },
+                { "text": "Napoleon Bonaparte", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welche Programmiersprache wurde in den 1960er Jahren für geschäftliche Anwendungen entwickelt?",
+            "antworten": [
+                { "text": "COBOL", "korrekt": true },
+                { "text": "FORTRAN", "korrekt": false },
+                { "text": "BASIC", "korrekt": false },
+                { "text": "ALGOL", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
+        },
+        {
+            "frage": "Welches chemische Element hat das Symbol 'W'?",
+            "antworten": [
+                { "text": "Wolfram", "korrekt": true },
+                { "text": "Wasserstoff", "korrekt": false },
+                { "text": "Wismut", "korrekt": false },
+                { "text": "Eisen", "korrekt": false }
+            ],
+            "bild": null,
+            "selectedAntwort": null
         }
     ]
 }
