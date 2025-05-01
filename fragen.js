@@ -419,6 +419,17 @@ const alleFragen = {
             selectedAntwort: null
         },
         {
+            frage: "Was sind Windbeutel?",
+            antworten: [
+                { text: "Ein Gebäck", korrekt: true },
+                { text: "Eine Krankheit", korrekt: false },
+                { text: "Ein Tier", korrekt: false },
+                { text: "Ein Getränk", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
+        {
             "frage": "Was ist die Hauptstadt von Deutschland?",
             "antworten": [
                 { "text": "Berlin", "korrekt": true },
