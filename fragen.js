@@ -364,17 +364,6 @@ const alleFragen = {
             selectedAntwort: null
         },
         {
-            frage: "Wer ist aktuell Bundeskanzler von Deutschland?",
-            antworten: [
-                { text: "Olaf Scholz", korrekt: true },
-                { text: "Angela Merkel", korrekt: false },
-                { text: "Frank-Walter Steinmeier", korrekt: false },
-                { text: "Gerhard Schröder", korrekt: false }
-            ],
-            bild: null,
-            selectedAntwort: null
-        },
-        {
             frage: "Wie viele Zentimeter sind ein Dezimeter",
             antworten: [
                 { text: "10", korrekt: true },
@@ -993,17 +982,6 @@ const alleFragen = {
             selectedAntwort: null
         },
         {
-            frage: "Wie viele Bundesländer hat Deutschland?",
-            antworten: [
-                { text: "16", korrekt: true },
-                { text: "14", korrekt: false },
-                { text: "18", korrekt: false },
-                { text: "20", korrekt: false }
-            ],
-            bild: null,
-            selectedAntwort: null
-        },
-        {
             frage: "Welcher Fluss fließt durch Paris?",
             antworten: [
                 { text: "Seine", korrekt: true },
@@ -1197,17 +1175,6 @@ const alleFragen = {
                 { text: "Jupiter", korrekt: false },
                 { text: "Saturn", korrekt: true },
                 { text: "Erde", korrekt: false }
-            ],
-            bild: null,
-            selectedAntwort: null
-        },
-        {
-            frage: "Wie viele Bundesländer hat Deutschland?",
-            antworten: [
-                { text: "14", korrekt: false },
-                { text: "16", korrekt: true },
-                { text: "18", korrekt: false },
-                { text: "12", korrekt: false }
             ],
             bild: null,
             selectedAntwort: null
