@@ -1300,6 +1300,17 @@ const alleFragen = {
             bild: null,
             selectedAntwort: null
         },
+        {
+            frage: "Die Sonne ist ...",
+            antworten: [
+                { text: "... ein Planet", korrekt: false },
+                { text: "... ein Stern", korrekt: true },
+                { text: "... eine Supernova", korrekt: false },
+                { text: "... ein Asteroid", korrekt: false }
+            ],
+            bild: null,
+            selectedAntwort: null
+        },
 
         {
             "frage": "Wie heißt die Hauptstadt von Australien?",
