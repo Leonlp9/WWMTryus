@@ -887,7 +887,7 @@ const alleFragen = {
             antworten: [
                 { text: "Kapitel 5 - Season 9", korrekt: false },
                 { text: "Kapitel 6 - Season 7", korrekt: false },
-                { text: "Kapitel 6 – Season 2", korrekt: true },
+                { text: "Kapitel 6 – Season 3", korrekt: true },
                 { text: "Kapitel 6 - Season 4", korrekt: false }
             ],
             bild: null,
